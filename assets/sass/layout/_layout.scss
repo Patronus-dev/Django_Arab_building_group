@@ -1,0 +1,738 @@
+/*-------------------------------------------------------*/
+/* Hero
+/*-------------------------------------------------------*/
+.main-wrapper {
+  overflow: hidden;
+  position: relative;
+
+  &--offset {
+
+    @include bp-lg-up {
+      margin-left: 240px;
+      position: relative;
+      width: auto;
+    }
+
+    @include bp-xl-up {
+      margin-left: 300px;     
+    }
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Intro
+/*-------------------------------------------------------*/
+.intro {
+  &__title {
+    font-size: 50px;
+    max-width: 300px;
+    line-height: 1.150;
+    margin-bottom: 28px;
+    margin-top: 16px;
+
+    @include bp-md-down {
+      font-size: 36px;
+      max-width: 100%;
+    }
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Feature
+/*-------------------------------------------------------*/
+.feature {
+  margin-top: 36px;
+
+  &__icon {
+    font-size: 48px;
+    color: $heading-color;
+  }
+
+  &__title {
+    font-size: 16px;
+    margin-top: 18px;
+  } 
+}
+
+
+/*-------------------------------------------------------*/
+/* Services
+/*-------------------------------------------------------*/
+.service {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 650px;  
+
+  &__img {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    @include background-img-cover;
+    @include transition( .5s );
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: 400;
+    z-index: 2;
+    @include transform( rotate( -90deg ) );
+    transform-origin: 0 0;
+  }
+
+  &--dark-overlay:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &:hover {
+    .service__img {
+      @include transform ( scale( 1.2 ) );
+    }
+  }
+
+  @include bp-lg-down {
+    height: 400px;
+  }
+
+  @include bp-md-down {
+    height: 300px;
+  }
+}
+
+
+/* Service 1
+-------------------------------------------------------*/
+.service-1 {
+  margin-bottom: 40px;
+
+  &__url {
+    display: block;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__info {
+    position: relative;
+    margin-top: -60px;
+    margin-left: 50px;
+    background-color: #fff;
+    padding: 40px 30px;
+  }
+
+  &__features {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+  &__feature {
+    line-height: 30px;
+    color: $heading-color;
+  }
+
+  &__feature-icon {
+    color: $main-color;
+    margin-right: 5px;
+  }
+
+  &__title {
+    font-size: 24px;
+  }
+}
+
+
+/* Benefit
+-------------------------------------------------------*/
+.offset-top-100 {
+  margin-top: -100px;
+
+  @include bp-sm-down {
+    margin-top: 0;
+  }
+}
+
+.benefit {
+  padding: 40px;
+  margin-bottom: 20px;
+  background-color: $bg-light;
+  text-align: center;
+
+  &__icon {
+    display: inline-block;
+    font-size: 39px;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 20px;
+    margin-top: 18px;
+    margin-bottom: 14px;
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Process
+/*-------------------------------------------------------*/
+.process {
+  text-align: center;
+
+  &__icon,
+  &__title,
+  &__text {
+    color: #fff;
+  }
+
+  &__title {
+    margin-top: 18px;
+    margin-bottom: 14px;
+    font-size: 20px;
+  }
+
+  &__icon {
+    display: inline-block;
+    font-size: 39px;
+    margin-bottom: 24px;
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Testimonials
+/*-------------------------------------------------------*/
+.testimonial {
+  margin-bottom: 6px;
+  text-align: center;
+
+  @include bp-sm-down {
+    padding: 30px;
+  }
+
+  &__img {
+    width: 55px !important;
+    border-radius: 50%;
+    margin-bottom: 27px;
+    float: left;
+    margin-right: 20px;
+  }
+
+  &__info {
+    font-family: $heading-font;
+    overflow: hidden;
+  }
+
+  &__author {
+    font-size: 16px;
+    color: #fff;
+
+    &:after {
+      content: "/";
+      margin: 0 5px 0 9px;
+    }
+  }
+
+  &__company {
+    color: $main-color;
+  }
+
+  &__body {
+    margin-top: 24px;
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 36px;
+    display: inline-block;
+  } 
+}
+
+.quote {
+  font-size: 120px;
+  opacity: 0.5;
+  line-height: 1;
+  display: block;
+  font-style: normal;
+  font-family: sans-serif;
+  height: 50px;
+}
+
+
+/*-------------------------------------------------------*/
+/* Partners
+/*-------------------------------------------------------*/
+.partners {
+  padding: 36px 0; 
+}
+
+
+/*-------------------------------------------------------*/
+/* Call Us
+/*-------------------------------------------------------*/
+.call-us {
+  background-color: $main-color;
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+  color: $heading-color;
+  text-align: center;
+
+  &__icon {
+    font-size: 50px;
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  &__title {
+    font-size: 16px;
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 14px;
+    max-width: 70%;
+  }
+
+  &__phone-number {
+    text-align: center;
+    font-family: $heading-font;
+    font-size: 30px;
+    margin-top: 8px;
+    color: $heading-color;
+    font-weight: 600;
+    display: block;
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Call To Action
+/*-------------------------------------------------------*/
+.call-to-action {  
+  position: relative;
+  background-color: $bg-light;
+  padding: 96px 15px;
+  border-radius: 5px;
+
+  &__title {
+    font-size: 34px;
+    margin-bottom: 30px;
+
+    @include bp-sm-down {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 24px;
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Page Title
+/*-------------------------------------------------------*/
+.page-title {
+  position: relative;
+  width: 100%;
+  overflow: hidden;  
+  display: block;
+  padding: 175px 0;
+  background-size: cover;
+  @include background-img-cover;
+  background-color: $bg-dark;
+
+  &.bg-dark-overlay:before {
+    background-color: rgba(0,0,0,.36);
+  }
+
+  &__holder {
+    max-width: 878px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  &__title {
+    line-height: 1.2;
+    margin-bottom: 8px;
+    color: #fff;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 0;
+  }
+
+  &--tall {
+    padding: 300px 0;
+  }
+
+  @include bp-lg-down {
+    padding: 120px 0;
+  }
+
+  @include bp-md-down {
+    padding: 60px 0;
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Breadcrumbs
+/*-------------------------------------------------------*/
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+
+    &:last-child:after {
+      display: none;
+    }
+  }
+
+  &__item:after {
+    content: '/';
+    display: inline-block;
+    margin: 0 6px;
+  }
+
+  &__url {
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Statistic
+/*-------------------------------------------------------*/
+.statistic {
+  text-align: center;
+
+  &-wrap {
+    padding: 64px 0;
+    border-top: 5px solid $border-color;
+    border-bottom: 5px solid $border-color;
+  }
+
+  &__number {
+    font-size: 70px;
+    font-family: $heading-font;
+    font-weight: 700;
+    display: inline-block;
+    color: $heading-color;
+    margin-bottom: 0;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: $body-font;
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Team
+/*-------------------------------------------------------*/
+.team {
+  margin-bottom: 32px;
+  position: relative;
+  overflow: hidden;
+
+  &-col {
+    width: 300px;
+    padding: 0 15px;
+  }
+
+  &__img-holder {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+
+  &__img {    
+    width: 100%;
+  }
+
+  &__name {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  &__occupation {
+    font-size: 14px;
+    color: $text-color;
+  }
+
+  &__details {
+    opacity: 0;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    padding: 30px;
+    overflow: hidden;
+    width: 100%;
+    z-index: 2;
+    @include transform( translateY( -50% ) );
+    @include transition ( .3s cubic-bezier(0.43, 0.07, 0.61, 0.95));
+  }
+
+  &:hover .team__details {
+    opacity: 1;
+    top: 50%;
+  }
+}
+
+.slick-team {
+  margin-left: -15px;
+  margin-right: -15px;
+
+  .slick-dots {
+    text-align: left;
+    padding: 0 5px;
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Newsletter
+/*-------------------------------------------------------*/
+.newsletter {
+  
+  .title-row {
+    margin-bottom: 20px;
+  }
+
+  .lead {
+    margin-top: 10px;
+    margin-bottom: 32px;
+  }
+
+  &__form {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mc4wp-form-fields {
+    @include display-flex;
+
+    & > .form-group:first-child {
+      flex: 1;
+      margin-right: 8px;
+
+      @include bp-sm-down {
+        margin-right: 0;
+      }
+    }
+
+    @include bp-sm-down {
+      display: block;
+    }
+  }
+
+  input {
+    height: 50px;
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Box Offset Container
+/*-------------------------------------------------------*/
+.box-offset-container {
+  background-color: #fff;
+  padding: 100px 50px;
+  margin-top: -210px;
+  margin-left: 220px;
+
+  @media ( max-width: 1440px ) {
+    padding: 50px;
+    margin-left: 120px;
+  }
+
+  @include bp-lg-down {
+    margin-top: 0;
+    margin-left: 0;
+    padding: 30px 0;
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Gmap
+/*-------------------------------------------------------*/
+.gmap {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+
+  @include bp-lg-down {
+    height: 400px;
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Widgets
+/*-------------------------------------------------------*/
+.widget-title {
+  margin-bottom: 18px;
+  font-size: 15px;
+  font-weight: 700;
+  position: relative;
+}
+
+.widget-address {
+  line-height: 30px;
+}
+
+.widget_nav_menu {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    padding: 6px 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
+
+
+/* Widget Tags / Entry Tags
+-------------------------------------------------------*/
+.widget_tag_cloud a,
+.entry__tags a {
+  line-height: 1;
+  color: $text-color;
+  display: inline-block;
+  font-size: 18px;
+
+  &:hover {
+    color: $main-color;
+  }
+}
+
+.tagcloud {
+  overflow: hidden;
+}
+
+
+/* Cookies banner
+-------------------------------------------------------*/
+.cc-container {
+  @include display-flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.cc-revoke,
+.cc-window {
+  position: relative;
+}
+
+.cc-window {
+  background-color: $heading-color !important;
+  padding: 5px 20px !important;
+}
+
+.cc-message {
+  margin-right: 20px;
+  flex: 0 1 auto !important;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.cc-link {
+  opacity: 1;
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+
+a.cc-btn.cc-dismiss {
+  background-color: $main-color;
+  border-radius: 5px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 14px;
+  border: 0;
+  color: #fff;
+  min-width: auto !important;
+
+  &:hover,
+  &:focus {
+    background-color: darken($main-color, 3%);
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Contact
+/*-------------------------------------------------------*/
+.contact {
+
+  &__title {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+
+  &__items {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+
+    a {
+      color: $text-color;
+
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+
+  &__item-label {
+    font-weight: 700;
+    display: block;
+  }
+}

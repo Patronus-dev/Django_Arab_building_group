@@ -1,0 +1,119 @@
+/*-------------------------------------------------------*/
+/* Footer
+/*-------------------------------------------------------*/
+.footer {
+  position: relative;
+  @include background-img-cover;
+  background-color: $bg-dark;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .container-fluid {
+    @include bp-lg-up {
+      padding: 0 40px;
+    }    
+  }
+}
+
+
+/* Footer Widgets
+-------------------------------------------------------*/
+.footer__widgets {
+  padding: 80px 0 48px;
+
+  a {
+    color: $text-color;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  .socials {
+    @include bp-md-up {
+      text-align: right;
+    }
+  }
+
+  @include bp-md-down {
+    .row > div:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+
+/* Footer 1
+-------------------------------------------------------*/
+.footer-1 {
+  background-color: #fff;
+  padding: 26px 0;
+
+  @include bp-lg-up {
+    .container-fluid {
+      padding: 0;
+    }
+  }
+
+  @include bp-md-down {
+    .widget_nav_menu {
+      margin-top: 12px;
+    }
+  }
+
+  @include bp-md-up {
+    .widget_nav_menu {
+      text-align: right;
+    }
+  }
+
+  .widget_nav_menu ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0 6px;
+    font-size: 14px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .widget_nav_menu a {
+    color: $heading-color;
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
+  }
+}
+
+/* Bottom Footer
+-------------------------------------------------------*/
+.footer__bottom {
+  padding: 24px 0 80px;
+  position: relative;
+}
+
+.copyright {
+  display: inline-block;
+  font-size: 14px;
+  color: $text-color;
+
+  a {
+   color: inherit;
+
+   &:hover,
+   &:focus {
+    color: $main-color;
+   }
+  }
+}

@@ -1,0 +1,379 @@
+/*-------------------------------------------------------*/
+/* Portfolio
+/*-------------------------------------------------------*/
+.masonry-filter {
+  margin-bottom: 60px;
+  margin-left: -12px;
+
+  a {
+    display: inline-block;
+    position: relative;
+    padding: 0 12px;
+    color: $text-color;
+    font-size: 12px;
+    font-weight: 700;
+    @include uppercase;
+
+    &.active,
+    &:hover {
+      color: $main-color;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        height: 1px;
+        width: 28px;
+        background-color: $main-color;
+        @include transform(translateX(-50%));
+      }
+    }
+  } 
+}
+
+.project {
+  position: relative;
+
+  &__container {
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+
+  &__img-holder {
+    position: relative;
+    overflow: hidden;  
+    z-index: 1;
+
+    & > a {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    @include transition ( .3s cubic-bezier(0.43, 0.07, 0.61, 0.95));
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  &__description {
+    padding-top: 20px;
+    width: 100%;
+    display: block;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    @include transition ( .3s cubic-bezier(0.43, 0.07, 0.61, 0.95));
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+
+    a:hover {
+      color: $main-color;
+    }
+  }
+
+  &__text {
+    color: $text-color;
+  }
+
+  &__category {
+    color: $text-color;
+    font-size: 13px;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  // Hover
+  &:hover &__description {
+    @include transform(translateY(0));
+  }
+
+  // Hover Overlay
+  .hover-overlay &__description {
+    @include transform(translateY(20%));
+    position: absolute;
+    padding: 30px;
+    bottom: 0;
+  }
+
+  .hover-overlay &__title,
+  .hover-overlay &__date,
+  .hover-overlay &__category {
+    color: #fff;
+  }
+}
+
+
+/* Project Style 1
+-------------------------------------------------------*/
+.project-1 {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 120px;
+  @include display-flex;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__container {
+    width: 65%;
+  }
+
+  &__description-holder {
+    width: 45%;
+    position: absolute;
+    z-index: 1;
+    background-color: $bg-dark;
+    padding: 80px 60px;
+    right: 0;
+    top: 50%;
+    @include transform( translateY( -50% ) );
+    
+    @media (max-width: 1050px) {
+      padding: 40px 30px;
+    }
+  }
+
+  &:nth-child(2n) {
+    .project-1__description-holder {
+      left: 0;
+      right: auto;
+    }
+
+    .project-1__container {
+      margin-left: auto;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 23px;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+  }
+
+  .read-more:hover,
+  .read-more:focus {
+    color: #fff;
+  }
+
+  @include bp-lg-down {
+    display: block;
+    margin-bottom: 48px;
+
+    &__container,
+    &__description-holder {
+      width: 100%;
+    }
+
+    &__description-holder {
+      padding: 40px 30px;
+      position: relative;
+      top: auto;
+      @include transform( none );
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+  }
+}
+
+
+
+/*-------------------------------------------------------*/
+/* Single Project
+/*-------------------------------------------------------*/
+.project__info {
+  @include bp-lg-up {
+    padding-right: 64px;
+  }
+
+  p {
+    margin-bottom: 24px;
+  }
+}
+
+.project__featured-img {
+  margin-bottom: 24px;
+}
+
+.project__details {
+  @include bp-lg-up {
+    padding-left: 64px;
+    padding-top: 10px;
+    border-left: 1px solid $border-color;
+  }
+}
+
+.project__meta {
+  margin-bottom: 33px;
+  list-style: none;
+  padding: 0;
+
+  &-item {    
+    line-height: 28px;
+    font-size: 15px;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-label {
+    font-weight: 700;
+    font-family: $heading-font;
+    color: $heading-color;
+    display: block;
+  }
+}
+
+.share-label {
+  font-size: 18px;
+}
+
+
+/*-------------------------------------------------------*/
+/* Project Nav
+/*-------------------------------------------------------*/
+
+.project-nav {
+  background-color: $bg-light;
+  padding: 38px 0;
+
+  .row > div {
+    position: relative;
+  }
+
+  &__item {
+    font-family: $heading-font;
+    color: $heading-color;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $main-color;
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+
+  &__page-prev a,
+  &__page-next a {
+    position: relative;
+    @include transition ($all);
+  }
+
+  &__page-prev i,
+  &__page-next i {
+    font-size: 17px;
+    display: inline-block;
+    position: relative;
+    line-height: 1;
+    top: 1px;
+  }
+
+  &__page-prev i {
+    margin-right: 9px;
+  }
+
+  &__page-next i {
+    margin-left: 9px;
+  }
+
+  &__page-next {
+    text-align: right;
+  }
+  
+  &__back-to-projects {
+    text-align: center;    
+  }  
+
+  &__back-to-projects-icon {
+    display: none;
+    font-size: 20px;
+  }
+
+  @media (max-width: 400px) {
+    &__back-to-projects a:first-child {
+      display: none;
+    }
+
+    &__back-to-projects-icon {
+      display: block;
+    }
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Fullpage Project
+/*-------------------------------------------------------*/
+
+.fullpage-project-body {
+  position: absolute;
+  background-color: #fff;
+  padding: 20px 35px 35px 35px;
+  bottom: 0;
+  width: 445px;
+
+  .work-item__title {
+    color: $heading-color;
+    font-size: 34px;
+  }
+
+  @media(max-width: 460px) {
+    width: auto;
+    padding: 10px 25px 25px 25px;
+
+    .work-item__title {
+      font-size: 24px;
+    }
+  }
+}
+
+
+/*-------------------------------------------------------*/
+/* Portfolio Responsive Styles
+/*-------------------------------------------------------*/
+
+// @include bp-md-down {
+//   .works-grid.grid-5-col .work-item,
+//   .works-grid.grid-4-col .work-item,
+//   #team-slider .gallery-cell {
+//     width: 33.3333%;
+//   }
+// }
+
+// @include bp-sm-down {  
+//   .works-grid.grid-5-col .work-item,
+//   .works-grid.grid-4-col .work-item,
+//   .works-grid.grid-3-col .work-item,
+//   #team-slider .gallery-cell,
+//   .isotope-large,
+//   .isotope-quarter,
+//   .isotope-small,
+//   .isotope-half {
+//     width: 50%;
+//   }
+// }

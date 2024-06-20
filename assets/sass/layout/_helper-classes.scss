@@ -1,0 +1,126 @@
+/*-------------------------------------------------------*/
+/* Helper classes
+/*-------------------------------------------------------*/
+.clear { clear: both; }
+.oh { overflow: hidden; }
+.ov { overflow: visible; }
+.relative { position: relative; }
+.mobile section { background-attachment: scroll !important; }
+.bg-dark { background-color: $bg-dark; }
+.bg-light { background-color: $bg-light; }
+.bg-white { background-color: #fff; }
+.bg-color { background-color: $secondary-color; }
+.white { color: #fff; }
+.static { position: static; }
+.block { display: block; }
+.left { float: left; }
+.right { float: right; }
+.valign { position: absolute; top: 50%; @include transform (translateY(-50%)); }
+.img-full-width { width: 100%; }
+.uppercase { text-transform: uppercase; letter-spacing: 0.02em; }
+.last { margin-bottom: 0 !important; }
+
+
+/* Section Dark / Background Image
+-------------------------------------------------------*/
+.bg-color,
+.bg-color-overlay,
+.bg-dark-overlay,
+.bg-gradient {
+  .section-title,
+  .statistic__number,
+  .statistic__title {
+    color: #fff;
+  }  
+}
+
+
+/* Box Shadow
+-------------------------------------------------------*/
+.box-shadow {
+  box-shadow: 0 1px 6px rgba(61, 65, 84, 0.15);
+}
+
+.box-shadow-large {
+  box-shadow: 0 20px 40px rgba(61, 65, 84, 0.15);
+}
+
+
+/*-------------------------------------------------------*/
+/* Hovers
+/*-------------------------------------------------------*/
+.hover-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0,0,0,.5);
+  @include transition ( .3s cubic-bezier(0.43, 0.07, 0.61, 0.95));
+}
+
+.hover-trigger:hover .hover-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* Hover Scale
+-------------------------------------------------------*/
+.hover-scale {
+  overflow: hidden;
+}
+
+.hover-scale img {
+  @include transition (.3s cubic-bezier(0.43, 0.07, 0.61, 0.95));
+}
+
+.hover-scale:hover img {
+  @include transform (scale(1.1,1.1));
+}
+
+
+
+/* Gradients / Overlays
+-------------------------------------------------------*/
+.bg-gradient:before {
+  content: "";
+  top: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+  @include linear-gradient-from-bottom(#B939E5, #4C86E7);
+}
+
+.bg-dark-overlay:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.8);
+}
+
+.bottom-gradient {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  bottom: 0;
+  @include linear-gradient-from-bottom(rgba(#000, .75), transparent);
+}
+
+/* Section Dividers
+-------------------------------------------------------*/
+.top-divider {
+  border-top: 1px solid $border-color;
+}
+
+.bottom-divider {
+  border-bottom: 1px solid $border-color;
+}
