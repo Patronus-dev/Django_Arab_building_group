@@ -4,10 +4,10 @@ from .models import Project, ProjectPhoto
 
 class ProjectPhotosInline(admin.TabularInline):
     model = ProjectPhoto
-    extra = 10  # تعداد فرم‌های خالی برای اضافه کردن عکس‌های جدید
+    extra = 10
 
 
 @admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('title', 'active',)
+    list_display = ('title', 'active', 'status', )
     inlines = [ProjectPhotosInline]

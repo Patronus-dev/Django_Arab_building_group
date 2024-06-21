@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <title>{% translate 'Arab building group' %} | {% block page_title %}{% endblock page_title %}</title>
 
@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
-    <link rel="apple-touch-icon" href="{% static 'img/apple-touch-icon-72x72.png' %}">
+    <link rel="shortcut icon" href="{% static 'img/logo_nav.png' %}">
+    <link rel="apple-touch-icon" href="{% static 'img/logo_nav.png' %}">
     <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/apple-touch-icon-72x72.png' %}">
     <link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/apple-touch-icon-114x114.png' %}">
 
@@ -48,11 +48,6 @@
                 <div class="flex-parent">
 
                     <div class="nav__header">
-                        <!-- Logo -->
-                        <a href="{% url 'home' %}" class="logo-container flex-child">
-                            <img class="logo" src="{% static 'img/logo.png' %}" srcset="{% static 'img/logo.png' %} 1x, {% static 'img/logo@2x.png' %} 2x"
-                                 alt="logo">
-                        </a>
 
                         <!-- Mobile toggle -->
                         <button type="button" class="nav__icon-toggle" id="nav__icon-toggle" data-toggle="collapse"
@@ -63,66 +58,59 @@
                             <span class="nav__icon-toggle-bar"></span>
                         </button>
                     </div>
-
-                    <!-- Navbar -->
-                    <nav id="navbar-collapse" class="nav__wrap collapse navbar-collapse">
-                        <ul class="nav__menu">
-                            <li class="nav__dropdown active">
-                                <a href="index.html" aria-haspopup="true">Home</a>
-                                <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
-                                   aria-expanded="false"></i>
-                                <ul class="nav__dropdown-menu">
-                                    <li><a href="index.html">Home 1</a></li>
-                                    <li><a href="index-2.html">Home 2</a></li>
-                                    <li><a href="index-3.html">Home 3</a></li>
-                                    <li><a href="index-4.html">Home 4</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav__dropdown">
-                                <a href="#" aria-haspopup="true">Pages</a>
-                                <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
-                                   aria-expanded="false"></i>
-                                <ul class="nav__dropdown-menu">
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="single-service.html">Single Service</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav__dropdown">
-                                <a href="#" aria-haspopup="true">Works</a>
-                                <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
-                                   aria-expanded="false"></i>
-                                <ul class="nav__dropdown-menu">
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="portfolio-gallery.html">Portfolio Gallery</a></li>
-                                    <li><a href="portfolio-single.html">Portfolio Single</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav__dropdown">
-                                <a href="#" aria-haspopup="true">Features</a>
-                                <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
-                                   aria-expanded="false"></i>
-                                <ul class="nav__dropdown-menu">
-                                    <li><a href="icons.html">Icons</a></li>
-                                    <li><a href="elements.html">Elements</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav__dropdown">
-                                <a href="blog.html" aria-haspopup="true">Blog</a>
-                                <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
-                                   aria-expanded="false"></i>
-                                <ul class="nav__dropdown-menu">
-                                    <li><a href="blog-masonry.html">Blog Masonry</a></li>
-                                    <li><a href="blog.html">Blog Standard</a></li>
-                                    <li><a href="single-post.html">Single Post</a></li>
-                                </ul>
-                            </li>
-                        </ul> <!-- end menu -->
-                        <div class="nav__phone nav__phone--mobile d-lg-none">
-                            <span class="nav__phone-text">Call us:</span>
-                            <a href="tel:1-800-995-3959" class="nav__phone-number">1-800-995-3959</a>
+                    <!-- social logos -->
+                    <div class="nav__socials d-none d-lg-block"
+                         style="border-right: #7f8c8d solid 1px; padding-right: 2%">
+                        <div class="socials">
+                            <a href="#" class="social social-email" aria-label="email" title="email"
+                               target="_blank"><i class="ui-email"></i></a>
+                            <a href="#" class="social social-twitter" aria-label="whatsapp" title="whatsapp"
+                               target="_blank"><i class="ui-whatsapp"></i></a>
+                            <a href="#" class="social social-instagram" aria-label="instagram" title="instagram"
+                               target="_blank"><i class="ui-instagram"></i></a>
                         </div>
+                    </div>
+
+                    <div class="nav__phone nav--align-right d-none d-lg-block">
+                        {#                        <span class="nav__phone-text">Call us:</span>#}
+                        {#                        <a href="tel:1-800-995-3959" class="nav__phone-number">1-800-995-3959</a>#}
+                    </div>
+
+                    <!-- start navbar -->
+                    <nav id="navbar-collapse" class="nav__wrap collapse navbar-collapse" style="margin-right: 5%">
+                        <ul class="nav__menu">
+                            <li class="nav__dropdown">
+                                <a href="{% url 'about_us' %}" aria-haspopup="true">{% trans 'About Us' %}</a>
+                                <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
+                                   aria-expanded="false"></i>
+                            </li>
+                            <li class="nav__dropdown">
+                                <a href="{% url 'project:projects_list' %}"
+                                   aria-haspopup="true">{% trans 'Projects' %}</a>
+                                <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
+                                   aria-expanded="false"></i>
+                                {#                                <ul class="nav__dropdown-menu">#}
+                                {#                                    <li><a href="#">{% trans 'Projects under construction' %}</a></li>#}
+                                {#                                    <li><a href="#">{% trans 'Built projects' %}</a></li>#}
+                                {#                                </ul>#}
+                            </li>
+                            <li class="nav__dropdown active">
+                                <a href="{% url 'home' %}" aria-haspopup="true">{% trans 'Home' %}</a>
+                                <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
+                                   aria-expanded="false"></i>
+                            </li>
+                            {#                            <li class="nav__dropdown">#}
+                            {#                                <a href="blog.html" aria-haspopup="true">Blog</a>#}
+                            {#                                <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"#}
+                            {#                                   aria-expanded="false"></i>#}
+                            {#                                <ul class="nav__dropdown-menu">#}
+                            {#                                    <li><a href="blog-masonry.html">Blog Masonry</a></li>#}
+                            {#                                    <li><a href="blog.html">Blog Standard</a></li>#}
+                            {#                                    <li><a href="single-post.html">Single Post</a></li>#}
+                            {#                                </ul>#}
+                            {#                            </li>#}
+                        </ul>
+                        <!-- end menu -->
 
                         <div class="nav__socials nav__socials--mobile d-lg-none">
                             <div class="socials">
@@ -137,25 +125,14 @@
                             </div>
                         </div>
                     </nav>
-                    <!-- end nav-wrap -->
+                    <!-- end navbar -->
 
-                    <div class="nav__phone nav--align-right d-none d-lg-block">
-                        <span class="nav__phone-text">Call us:</span>
-                        <a href="tel:1-800-995-3959" class="nav__phone-number">1-800-995-3959</a>
-                    </div>
-
-                    <div class="nav__socials d-none d-lg-block">
-                        <div class="socials">
-                            <a href="#" class="social social-twitter" aria-label="twitter" title="twitter"
-                               target="_blank"><i class="ui-twitter"></i></a>
-                            <a href="#" class="social social-facebook" aria-label="facebook" title="facebook"
-                               target="_blank"><i class="ui-facebook"></i></a>
-                            <a href="#" class="social social-youtube" aria-label="youtube" title="google plus"
-                               target="_blank"><i class="ui-youtube"></i></a>
-                            <a href="#" class="social social-instagram" aria-label="instagram" title="instagram"
-                               target="_blank"><i class="ui-instagram"></i></a>
-                        </div>
-                    </div>
+                    <!-- Logo -->
+                    <a href="{% url 'home' %}" style="width: 5%">
+                        <img class="logo" src="{% static 'img/logo_nav.png' %}"
+                             srcset="{% static 'img/logo_nav.png' %} 8x, {% static 'img/logo_nav.png' %} 8x"
+                             alt="logo">
+                    </a>
 
                 </div>
                 <!-- end flex-parent -->
@@ -173,7 +150,7 @@
         {% endblock content %}
 
         <!-- Footer -->
-        <footer class="footer bg-dark-overlay" style="background-image: url({% static 'img/footer/1.jpg' %});">
+        <footer class="footer bg-dark-overlay" style="background-image: url({% static 'img/footer/1.jpg' %}); margin-top: 10%">
             <div class="container-fluid">
                 <div class="footer__widgets">
                     <div class="row">
@@ -183,7 +160,8 @@
                                 <!-- Logo -->
                                 <a href="{% url 'home' %}" class="logo-container flex-child">
                                     <img class="logo" src="{% static 'img/logo_white.png' %}"
-                                         srcset="{% static 'img/logo_white.png' %} 1x, {% static 'img/logo_white@2x.png' %} 2x" alt="logo">
+                                         srcset="{% static 'img/logo_white.png' %} 1x, {% static 'img/logo_white@2x.png' %} 2x"
+                                         alt="logo">
                                 </a>
                             </div>
                         </div> <!-- end logo -->
@@ -212,12 +190,10 @@
                         <div class="col-lg-3 offset-lg-2 col-md-3">
                             <div class="widget">
                                 <div class="socials">
-                                    <a href="#" class="social social-twitter" aria-label="twitter" title="twitter"
-                                       target="_blank"><i class="ui-twitter"></i></a>
-                                    <a href="#" class="social social-facebook" aria-label="facebook" title="facebook"
-                                       target="_blank"><i class="ui-facebook"></i></a>
-                                    <a href="#" class="social social-youtube" aria-label="youtube" title="google plus"
-                                       target="_blank"><i class="ui-youtube"></i></a>
+                                    <a href="#" class="social social-email" aria-label="email" title="email"
+                                       target="_blank"><i class="ui-email"></i></a>
+                                    <a href="#" class="social social-twitter" aria-label="whatsapp" title="whatsapp"
+                                       target="_blank"><i class="ui-whatsapp"></i></a>
                                     <a href="#" class="social social-instagram" aria-label="instagram" title="instagram"
                                        target="_blank"><i class="ui-instagram"></i></a>
                                 </div>
@@ -234,8 +210,10 @@
 							&copy; 2018 Sedona, Made by <a href="https://deothemes.com">DeoThemes</a>
 						</span>
                 </div>
-            </div> <!-- end footer bottom -->
-        </footer> <!-- end footer -->
+            </div>
+            <!-- end footer bottom -->
+        </footer>
+        <!-- end footer -->
 
         <div id="back-to-top">
             <a href="#top"><i class="ui-arrow-up"></i></a>
@@ -255,7 +233,6 @@
 <script src="{% static 'revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
 <script src="{% static 'js/rev-slider.js' %}"></script>
 <script src="{% static 'js/scripts.js' %}"></script>
-
 
 <!-- Rev Slider Offline Scripts -->
 <script src="{% static 'revolution/js/extensions/revolution.extension.video.min.js' %}"></script>

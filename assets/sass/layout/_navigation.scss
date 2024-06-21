@@ -89,7 +89,7 @@
 
     &__menu > li {
       display: inline-block;
-      text-align: center;
+      text-align: right;
     }
 
     &__dropdown-menu {
@@ -99,7 +99,7 @@
       z-index: 1000;
       min-width: 220px;
       width: 100%;
-      text-align: left;
+      text-align: right;
       padding: 20px 0;
       list-style: none;
       background-color: $bg-dark;
@@ -178,7 +178,7 @@
 /* Logo
 -------------------------------------------------------*/
 .logo {
-  line-height: 1;
+    line-height: 1;
 }
 
 
@@ -370,7 +370,7 @@ header .flex-parent {
     }
 
     .nav__menu > li {
-      text-align: left;
+      text-align: right;
     }
 
     .nav__menu > li > a {

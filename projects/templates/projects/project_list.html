@@ -1,0 +1,60 @@
+{% extends '_base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block page_title %}{% translate 'Projects' %}{% endblock page_title %}
+
+{% block content %}
+<!-- Page Title -->
+<section class="page-title bg-dark-overlay text-center"
+         style="background-image: url({% static 'img/page-title/portfolio.jpg' %});">
+    <div class="container">
+        <div class="page-title__holder">
+            <h1 class="page-title__title">{% trans 'Projects' %}</h1>
+        </div>
+    </div>
+</section>
+<!-- end page title -->
+
+<!-- Portfolio -->
+<section class="section-wrap">
+    <div class="container-fluid container-semi-fluid">
+
+        <!-- Filter -->
+        <div class="masonry-filter text-center">
+            <a style="font-size: 18px;" href="#" class="filter" data-filter=".done">{% trans 'Built projects' %}</a>
+            <a style="font-size: 18px;" href="#" class="filter" data-filter=".building">{% trans 'Construction projects' %}</a>
+            <a style="font-size: 18px;" href="#" class="filter active" data-filter="*">{% trans 'All' %}</a>
+        </div>
+        <!-- end filter -->
+
+        <div class="row masonry-grid">
+
+            {% for project in projects %}
+            <!-- start project -->
+            <div class="masonry-item col-lg-3 project hover-trigger {{ project.status }}">
+                <div class="project__container">
+                    <div class="project__img-holder">
+                        <a href="{% url 'project:project_detail' project.id %}">
+                            {% if project.image_cover %}
+                            <img src="{{ project.image_cover.url }}" alt="{{ project.title }} cover image">
+                            {% endif %}
+                            <div class="hover-overlay">
+                                <div class="project__description">
+                                    <h3 class="project__title">{{ project.title }}</h3>
+                                    <span class="project__date">{{ project.date_construction }}</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end project -->
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+<!-- end portfolio -->
+
+{% endblock content %}

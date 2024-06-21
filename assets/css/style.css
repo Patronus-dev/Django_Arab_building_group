@@ -3098,6 +3098,10 @@ a.cc-btn.cc-dismiss:hover, a.cc-btn.cc-dismiss:focus {
   margin-left: -12px;
 }
 
+.font-large {
+    font-size: 25px;
+}
+
 .masonry-filter a {
   display: inline-block;
   position: relative;
@@ -3334,7 +3338,7 @@ a.cc-btn.cc-dismiss:hover, a.cc-btn.cc-dismiss:focus {
   .project__details {
     padding-left: 64px;
     padding-top: 10px;
-    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
   }
 }
 

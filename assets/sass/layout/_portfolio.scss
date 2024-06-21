@@ -5,12 +5,13 @@
   margin-bottom: 60px;
   margin-left: -12px;
 
+
   a {
     display: inline-block;
     position: relative;
     padding: 0 12px;
     color: $text-color;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 700;
     @include uppercase;
 
@@ -218,7 +219,7 @@
   @include bp-lg-up {
     padding-left: 64px;
     padding-top: 10px;
-    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
   }
 }
 
@@ -357,23 +358,23 @@
 /* Portfolio Responsive Styles
 /*-------------------------------------------------------*/
 
-// @include bp-md-down {
-//   .works-grid.grid-5-col .work-item,
-//   .works-grid.grid-4-col .work-item,
-//   #team-slider .gallery-cell {
-//     width: 33.3333%;
-//   }
-// }
+ @include bp-md-down {
+   .works-grid.grid-5-col .work-item,
+   .works-grid.grid-4-col .work-item,
+   #team-slider .gallery-cell {
+     width: 33.3333%;
+   }
+ }
 
-// @include bp-sm-down {  
-//   .works-grid.grid-5-col .work-item,
-//   .works-grid.grid-4-col .work-item,
-//   .works-grid.grid-3-col .work-item,
-//   #team-slider .gallery-cell,
-//   .isotope-large,
-//   .isotope-quarter,
-//   .isotope-small,
-//   .isotope-half {
-//     width: 50%;
-//   }
-// }
+ @include bp-sm-down {
+   .works-grid.grid-5-col .work-item,
+   .works-grid.grid-4-col .work-item,
+   .works-grid.grid-3-col .work-item,
+   #team-slider .gallery-cell,
+   .isotope-large,
+   .isotope-quarter,
+   .isotope-small,
+   .isotope-half {
+     width: 50%;
+   }
+ }
