@@ -1,0 +1,72 @@
+{% extends '_base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block page_title %}{% translate 'Blog' %}{% endblock page_title %}
+
+{% block content %}
+
+    <!-- Page Title -->
+    <section class="page-title bg-dark-overlay text-center"
+             style="background-image: url({% static 'img/page-title/blog.jpg' %});">
+        <div class="container">
+            <div class="page-title__holder">
+                <h1 class="page-title__title">{% trans 'Blog' %}</h1>
+            </div>
+        </div>
+    </section>
+    <!-- end page title -->
+
+    <!-- Blog -->
+    <section class="section-wrap" style="direction: rtl">
+        <div class="container">
+            <div class="row">
+                {% for blog in blogs %}
+                    <div class="col-lg-4 col-md-6">
+                        <article class="entry">
+                            <div class="entry__img-holder">
+                                <a href="{% url 'blog_detail' blog.pk %}">
+                                    <img style="width: 500px; height: 350px" src="{{ blog.image.url }}" class="entry__img" alt="">
+                                </a>
+                            </div>
+                            <div class="entry__body" style="text-align: right">
+                                <ul class="entry__meta">
+                                    <li class="entry__meta-date">
+                                        <span style="text-align: right">{{ blog.datetime_created }}</span>
+                                    </li>
+                                </ul>
+                                <h2 class="entry__title">
+                                    <a href="{% url 'blog_detail' blog.pk %}">{{ blog.title }}</a>
+                                </h2>
+                                <a href="{% url 'blog_detail' blog.id %}" class="read-more">
+                                    <span class="read-more__text">{% trans 'Read More' %}</span>
+                                    <i class="ui-arrow-left read-more__icon"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                {% endfor %}
+            </div>
+            <!-- end row -->
+
+            <!-- Pagination -->
+            <nav class="pagination">
+                {% if page_obj.has_previous %}
+                    <a href="?page={{ page_obj.previous_page_number }}">
+                        <span aria-current="page" class="page-numbers">Previous &laquo;</span>
+                    </a>
+                {% endif %}
+                <span aria-current="page" class="page-numbers current">{{ page_obj.number }}</span>
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}" class="page-numbers">Next &raquo;</a>
+                    <a href="?page={{ page_obj.next_page_number }}" class="next page-numbers">
+                        <i class="ui-arrow-right"></i>
+                    </a>
+                {% endif %}
+            </nav>
+
+        </div>
+    </section>
+    <!-- end blog -->
+
+{% endblock content %}

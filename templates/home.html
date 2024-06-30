@@ -295,26 +295,22 @@
                     ><a href='#' class='btn btn--lg btn--color'>View Project</a>
                     </div>
 
-                </li> <!-- end slide 1 -->
+                </li>
+                <!-- end slide 1 -->
 
             </ul>
         </div>
     </div>
 
     <!-- Intro -->
-    <section class="section-wrap intro pb-40">
+    <section class="section-wrap intro pb-40" style="text-align: justify; direction: rtl">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
-                    <h2 class="intro__title">25 years of Experience</h2>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium, totam rem aperiam, eaque
-                        ipsa quae</p>
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia conse
-                        quuntur magni dolores eos qui
-                        ratione voluptatem sequi nesciunt. Neque porro quisquam qui dolorem ipsum quia dolor sit
-                        amet, consectetur, adipisci velit.</p>
-                    <div class="row mb-lg-48">
+                    <h2 class="mb-32">{% trans "Wellcome" %}</h2>
+                    <p class="lead">{% trans "Ali Arab Construction Group has been operating since 1373 with the aim of building safe buildings, putting quality at the forefront, and using expert and experienced engineers and efficient workers, using quality materials and facilities, along with management. The experience and knowledge of engineering has succeeded in building numerous and significant construction projects in Tehran and has been placed in the category of successful and reliable builders in Tehran and has also been selected as the top builder in Tehran's 3rd district." %}</p>
+
+                    <div class="row mb-lg-48" style="text-align: center">
                         <div class="col-sm-4">
                             <div class="feature">
                                 <i class="icon-Hotel-3 feature__icon"></i>
@@ -343,13 +339,94 @@
     </section>
     <!-- end intro -->
 
+    <!-- Services -->
+    <section class="section-wrap pt-0 pb-0 mt-64">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-6">
+                    <div class="service-1">
+                        <a href="#" class="service-1__url hover-scale" onclick="return false;">
+                            <img src="{% static 'img/about/Interior design.jpg' %}" class="service-1__img" alt="">
+                        </a>
+                        <div class="service-1__info">
+                            <h3 class="service-1__title">{% trans 'Interior design' %}</h3>
+                            <ul class="service-1__features">
+                                <li class="service-1__feature">
+                                    <i class="ui-check service-1__feature-icon"></i>
+                                    <span class="service-1__feature-text">{% trans 'Modern Design' %}</span>
+                                </li>
+                                <li class="service-1__feature">
+                                    <i class="ui-check service-1__feature-icon"></i>
+                                    <span class="service-1__feature-text">{% trans 'Unique Foundation' %}</span>
+                                </li>
+                                <li class="service-1__feature">
+                                    <i class="ui-check service-1__feature-icon"></i>
+                                    <span class="service-1__feature-text">{% trans 'Smart Heading System' %}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6">
+                    <div class="service-1">
+                        <a href="#" class="service-1__url hover-scale" onclick="return false;">
+                            <img src="{% static 'img/about/_mg_8991.jpg' %}" class="service-1__img" alt="">
+                        </a>
+                        <div class="service-1__info">
+                            <h3 class="service-1__title">{% trans 'Exterior design' %}</h3>
+                            <ul class="service-1__features">
+                                <li class="service-1__feature">
+                                    <i class="ui-check service-1__feature-icon"></i>
+                                    <span class="service-1__feature-text">{% trans 'Modern Design' %}</span>
+                                </li>
+                                <li class="service-1__feature">
+                                    <i class="ui-check service-1__feature-icon"></i>
+                                    <span class="service-1__feature-text">{% trans 'Unique Foundation' %}</span>
+                                </li>
+                                <li class="service-1__feature">
+                                    <i class="ui-check service-1__feature-icon"></i>
+                                    <span class="service-1__feature-text">{% trans 'Smart Heading System' %}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6">
+                    <div class="service-1">
+                        <a href="#" class="service-1__url hover-scale" onclick="return false;">
+                            <img src="{% static 'img/about/Interior design.jpg' %}" class="service-1__img" alt="">
+                        </a>
+                        <div class="service-1__info">
+                            <h3 class="service-1__title">{% trans 'Industrial premises' %}</h3>
+                            <ul class="service-1__features">
+                                <li class="service-1__feature">
+                                    <i class="ui-check service-1__feature-icon"></i>
+                                    <span class="service-1__feature-text">{% trans 'Modern Design' %}</span>
+                                </li>
+                                <li class="service-1__feature">
+                                    <i class="ui-check service-1__feature-icon"></i>
+                                    <span class="service-1__feature-text">{% trans 'Unique Foundation' %}</span>
+                                </li>
+                                <li class="service-1__feature">
+                                    <i class="ui-check service-1__feature-icon"></i>
+                                    <span class="service-1__feature-text">{% trans 'Smart Heading System' %}</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end services -->
 
     <!-- Testimonials -->
-    <section class="section-wrap bg-dark-overlay" style="background-image: url({% static 'img/testimonials/bg.jpg' %});">
+    <section class="section-wrap bg-dark-overlay"
+             style="background-image: url({% static 'img/testimonials/bg.jpg' %})">
         <div class="container">
             <div class="title-row text-center">
-                <p class="subtitle">Testimonials</p>
-                <h2 class="section-title">What clients say about us</h2>
+                <h3 class="section-title">Some honors</h3>
                 <i class="quote">“</i>
             </div>
 
@@ -372,7 +449,7 @@
                             and talented! I will work only to help your sales goals.”</p>
                     </div>
                     <div class="testimonial__info">
-                        <span class="testimonial__author">Alexander Samokhin</span>
+                        <span class="testimonial__author">Joeby Ragpa</span>
                         <span class="testimonial__company">DeoThemes</span>
                     </div>
                 </div>
@@ -394,108 +471,151 @@
                             and talented! I will work only to help your sales goals.”</p>
                     </div>
                     <div class="testimonial__info">
-                        <span class="testimonial__author">Alexander Samokhin</span>
+                        <span class="testimonial__author">Joeby Ragpa</span>
                         <span class="testimonial__company">DeoThemes</span>
                     </div>
                 </div>
-
-            </div> <!-- end slider -->
-
+            </div>
+            <!-- end slider -->
         </div>
     </section>
     <!-- end testimonials -->
 
-{#    <!-- From Blog -->#}
-{#    <section class="section-wrap blog-grid">#}
-{#        <div class="container">#}
-{#            <div class="row">#}
-{#                <div class="col-lg-4">#}
-{#                    <div class="blog-grid__title-col d-flex flex-column mb-lg-48">#}
-{#                        <div class="title-row">#}
-{#                            <p class="subtitle">From Blog</p>#}
-{#                            <h2 class="section-title">Specialized news</h2>#}
-{#                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia#}
-{#                                consequun tur magni dolores eos qui#}
-{#                                ratione</p>#}
-{#                        </div>#}
-{#                        <div class="call-us mt-auto">#}
-{#                            <i class="icon-Dispacher-2 call-us__icon"></i>#}
-{#                            <span class="call-us__title">Call us anytime</span>#}
-{#                            <a href="tel:1-800-995-3959" class="call-us__phone-number"> 1-800-995-3959</a>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{##}
-{#                <div class="col-lg-7 offset-lg-1">#}
-{#                    <div class="from-blog">#}
-{#                        <div class="row row-60">#}
-{#                            <div class="col-lg-6">#}
-{#                                <article class="entry">#}
-{#                                    <div class="entry__img-holder">#}
-{#                                        <a href="single-post.html">#}
-{#                                            <img src="{% static 'img/blog/from_blog_1.jpg' %}" class="entry__img" alt="">#}
-{#                                        </a>#}
-{#                                    </div>#}
-{#                                    <div class="entry__body">#}
-{#                                        <ul class="entry__meta">#}
-{#                                            <li class="entry__meta-date">#}
-{#                                                <span>15 November 2018</span>#}
-{#                                            </li>#}
-{#                                        </ul>#}
-{#                                        <h4 class="entry__title">#}
-{#                                            <a href="single-post.html">Best buildings of 2018 revealed at day one of#}
-{#                                                World Architecture Festival 2018.</a>#}
-{#                                        </h4>#}
-{#                                    </div>#}
-{#                                </article>#}
-{#                            </div>#}
-{#                            <div class="col-lg-6">#}
-{#                                <article class="entry">#}
-{#                                    <div class="entry__img-holder">#}
-{#                                        <a href="single-post.html">#}
-{#                                            <img src="img/blog/from_blog_2.jpg" class="entry__img" alt="">#}
-{#                                        </a>#}
-{#                                    </div>#}
-{#                                    <div class="entry__body">#}
-{#                                        <ul class="entry__meta">#}
-{#                                            <li class="entry__meta-date">#}
-{#                                                <span>15 November 2018</span>#}
-{#                                            </li>#}
-{#                                        </ul>#}
-{#                                        <h4 class="entry__title">#}
-{#                                            <a href="single-post.html">Sunken washroom by Studio 304 allows#}
-{#                                                residents to bathe in a garden setting.</a>#}
-{#                                        </h4>#}
-{#                                    </div>#}
-{#                                </article>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="from-blog__recent-posts">#}
-{#                            <ul class="from-blog__recent-posts-list">#}
-{#                                <li class="from-blog__recent-posts-item">#}
-{#                                    <span class="from-blog__post-number">1</span>#}
-{#                                    <a href="single-post.html" class="from-blog__post-url">Guadalajara offers#}
-{#                                        "extraordinary opportunities" for young architects</a>#}
-{#                                </li>#}
-{#                                <li class="from-blog__recent-posts-item">#}
-{#                                    <span class="from-blog__post-number">2</span>#}
-{#                                    <a href="single-post.html" class="from-blog__post-url">Lacy Brick by Pamphilon#}
-{#                                        ArchitectsResidentialPamphilon Architects adds textured#}
-{#                                        brick extension to Edwardian house in London</a>#}
-{#                                </li>#}
-{#                                <li class="from-blog__recent-posts-item">#}
-{#                                    <span class="from-blog__post-number">3</span>#}
-{#                                    <a href="single-post.html" class="from-blog__post-url">Guadalajara offers#}
-{#                                        "extraordinary opportunities" for young architects</a>#}
-{#                                </li>#}
-{#                            </ul>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{##}
-{#            </div>#}
-{#        </div>#}
-{#    </section>#}
-{#    <!-- end from blog -->#}
+    <!-- From Blog -->
+    <section class="section-wrap blog-grid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="blog-grid__title-col d-flex flex-column mb-lg-48">
+                        <div class="title-row">
+                            <p class="subtitle">{% trans 'From Blog' %}</p>
+                            <h2 class="section-title">{% trans 'Quick access to top blog articles' %}</h2>
+                            <p>{% trans 'With unique quality, we build a house beyond your expectations. Your satisfaction is our honor!' %}</p>
+                        </div>
+                        <div class="call-us mt-auto">
+                            <i class="icon-Dispacher-2 call-us__icon"></i>
+                            <span class="call-us__title">{% trans 'Contact us' %}</span>
+                            <a href="tel:1-800-995-3959" class="call-us__phone-number"> 1-800-995-3959</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="from-blog">
+                        <div class="row row-60">
+                            <div class="col-lg-6">
+                                <article class="entry">
+                                    <div class="entry__img-holder">
+                                        <a href="single-post.html">
+                                            <img src="{% static 'img/blog/from_blog_1.jpg' %}" class="entry__img" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="entry__body">
+                                        <ul class="entry__meta">
+                                            <li class="entry__meta-date">
+                                                <span>15 November 2018</span>
+                                            </li>
+                                        </ul>
+                                        <h4 class="entry__title">
+                                            <a href="single-post.html">Best buildings of 2018 revealed at day one of
+                                                World
+                                                Architecture Festival 2018.</a>
+                                        </h4>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-lg-6">
+                                <article class="entry">
+                                    <div class="entry__img-holder">
+                                        <a href="single-post.html">
+                                            <img src="{% static 'img/blog/from_blog_2.jpg' %}" class="entry__img" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="entry__body">
+                                        <ul class="entry__meta">
+                                            <li class="entry__meta-date">
+                                                <span>15 November 2018</span>
+                                            </li>
+                                        </ul>
+                                        <h4 class="entry__title">
+                                            <a href="single-post.html">Sunken washroom by Studio 304 allows residents to
+                                                bathe in a garden setting.</a>
+                                        </h4>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="from-blog__recent-posts">
+                            <ul class="from-blog__recent-posts-list">
+                                <li class="from-blog__recent-posts-item">
+                                    <span class="from-blog__post-number">1</span>
+                                    <a href="single-post.html" class="from-blog__post-url">Guadalajara offers
+                                        "extraordinary
+                                        opportunities" for young architects</a>
+                                </li>
+                                <li class="from-blog__recent-posts-item">
+                                    <span class="from-blog__post-number">2</span>
+                                    <a href="single-post.html" class="from-blog__post-url">Lacy Brick by Pamphilon
+                                        ArchitectsResidentialPamphilon Architects adds textured
+                                        brick extension to Edwardian house in London</a>
+                                </li>
+                                <li class="from-blog__recent-posts-item">
+                                    <span class="from-blog__post-number">3</span>
+                                    <a href="single-post.html" class="from-blog__post-url">Guadalajara offers
+                                        "extraordinary
+                                        opportunities" for young architects</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end from blog -->
+
 
 {% endblock content %}
+
+
+
+
+
+{##}
+{#<!-- Portfolio -->#}
+{#<section class="section-wrap">#}
+{#    <h3 class="text-right">{% trans 'Discover Recent Works' %}</h3>#}
+{#    <div class="container">#}
+{#        {% for project in  all_projects %}#}
+{#            {% if  project.id == 2 or project.id == 3 or project.id == 1 %}#}
+{#                <div class="projects" style="margin-top: 5%">#}
+{#                <div class="project-1">#}
+{#                    <div class="project-1__container">#}
+{#                        <div class="project__img-holder hover-scale">#}
+{#                            <img style="width: 400px; height:  400px"#}
+{#                                 src="{{ project.image_cover.url }}"#}
+{#                                 alt="{{ project.title }}" class="project__img-holder">#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="project-1__description-holder"#}
+{#                         style="margin-right: 30%;height: 300px; text-align: right">#}
+{#                        <div class="project-1__description">#}
+{#                            <h3 class="project-1__title">{{ project.title }}</h3>#}
+{#                            <p class="project-1__text">{{ project.address }}</p>#}
+{#                            <a href="{% url 'project:project_detail' project.id %}" class="read-more"#}
+{#                               style="float: left">#}
+{#                                <span class="read-more__text">{% trans 'More' %}</span>#}
+{#                                <i class="ui-arrow-right read-more__icon"></i>#}
+{#                            </a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <!-- end project -->#}
+{#            {% endif %}#}
+{#        {% endfor %}#}
+{#        </div>#}
+{##}
+{#    </div>#}
+{#</section>#}
+{#<!-- end portfolio -->#}

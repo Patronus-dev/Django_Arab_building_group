@@ -1,0 +1,131 @@
+{% extends '_base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block page_title %}{% translate 'About Us' %}{% endblock page_title %}
+
+{% block content %}
+
+    <!-- Page Title -->
+    <section class="page-title bg-dark-overlay text-center"
+             style="background-image: url({% static 'img/page-title/about.jpg' %});">
+        <div class="container">
+            <div class="page-title__holder">
+                <h1 class="page-title__title">{% trans 'About Us' %}</h1>
+            </div>
+        </div>
+    </section>
+    <!-- end page title -->
+
+    <!-- start about 1 -->
+    <section class="section-wrap">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="intro text-center">
+                        <h2 class="mb-32">{% trans "Wellcome" %}</h2>
+                        <p style="direction: rtl;" class="lead">{% trans "Ali Arab Construction Group has been operating since 1373 with the aim of building safe buildings, putting quality at the forefront, and using expert and experienced engineers and efficient workers, using quality materials and facilities, along with management. The experience and knowledge of engineering has succeeded in building numerous and significant construction projects in Tehran and has been placed in the category of successful and reliable builders in Tehran and has also been selected as the top builder in Tehran's 3rd district." %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about 1 -->
+
+    <!-- start team image -->
+    <div style="width: 75%; margin: 0 auto">
+        <img src="{% static 'img/team/personnel.jpg' %}" alt="">
+    </div>
+    <!-- start team image -->
+
+    <!-- start about 2 -->
+    <section class="section-wrap">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="intro text-center">
+                        <p style="direction: rtl;" class="lead">{% trans "One of the strengths of our collection is the possibility of optimal design of projects with the cooperation of experienced forces and the use of new technologies and up-to-date engineering software, which has led to the satisfaction and ease of use of the employers." %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about 2 -->
+
+    <!-- Statistic -->
+    <div class="container">
+        <div class="statistic-wrap" style="padding-left: 20%;">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="statistic">
+                        <strong style="font-size: 30px">+</strong>
+                        <span class="statistic__number" data-count="80">0</span>
+                        <h5 class="statistic__title">{% trans 'Successful Projects' %}</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="statistic">
+                        <span class="statistic__number" data-count="7">0</span>
+                        <h5 class="statistic__title">{% trans 'In Progress Projects' %}</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="statistic">
+                        <strong style="font-size: 30px">+</strong>
+                        <span class="statistic__number" data-count="40">0</span>
+                        <h5 class="statistic__title">{% trans 'Team Members' %}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end statistic -->
+
+
+    <!-- start about 3 -->
+    <section class="section-wrap">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="intro text-center">
+                        <p style="direction: rtl;"  class="lead">{% trans "Urban design and beautification and well-being in the home environment, high structural resistance, energy saving, etc. are among the things that are always important to us." %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about 3 -->
+
+    <!-- start container scripts -->
+    <script>
+        // Counter effect script
+        const counters = document.querySelectorAll('.statistic__number');
+        counters.forEach((counter) => {
+            const countTo = counter.getAttribute('data-count');
+
+            let increment = Math.ceil(countTo / 100);
+
+            function animateCounter() {
+                if (count < countTo) {
+                    count += increment;
+                    counter.textContent = count;
+                    setTimeout(animateCounter, 100);
+                } else {
+                    counter.textContent = countTo;
+                }
+            }
+
+            // Trigger animation when element is scrolled into view
+            const observer = new IntersectionObserver((entries) => {
+                if (entries[0].isIntersecting) {
+                    animateCounter();
+                }
+            }, {threshold: 1.0});
+            observer.observe(counter);
+        });
+        let count = 0;
+    </script>
+    <!-- end container scripts -->
+
+{% endblock content %}
+

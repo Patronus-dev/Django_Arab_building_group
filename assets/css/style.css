@@ -20,6 +20,7 @@ html {
   font-size: 100%;
 }
 
+
 .clearfix {
   *zoom: 1;
 }
@@ -49,11 +50,19 @@ html {
 :focus {
   outline: none;
 }
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('/assets/fonts/Vazirmatn-Regular.woff2') format('woff2'),
+         url('/assets/fonts/Vazirmatn-Regular.woff') format('woff'),
+         url('/assets/fonts/Vazirmatn-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Vazirmatn', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-smoothing: antialiased;
@@ -3273,6 +3282,7 @@ a.cc-btn.cc-dismiss:hover, a.cc-btn.cc-dismiss:focus {
 .project-1:nth-child(2n) .project-1__description-holder {
   left: 0;
   right: auto;
+
 }
 
 .project-1:nth-child(2n) .project-1__container {

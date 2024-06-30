@@ -9,5 +9,5 @@ class ProjectPhotosInline(admin.TabularInline):
 
 @admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('title', 'active', 'status', )
+    list_display = ('title', 'active', 'status', 'id', )
     inlines = [ProjectPhotosInline]

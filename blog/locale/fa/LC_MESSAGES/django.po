@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-30 22:52+0330\n"
+"PO-Revision-Date: 2024-06-30 22:52+0330\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: .\models.py:8
+msgid "published"
+msgstr "منتشر شده"
+
+#: .\models.py:9
+msgid "draft"
+msgstr "پیش نویس"
+
+#: .\models.py:12
+msgid "Title"
+msgstr "عنوان"
+
+#: .\models.py:13
+msgid "Author"
+msgstr "نویسنده"
+
+#: .\models.py:14
+msgid "Text"
+msgstr "متن"
+
+#: .\models.py:15
+msgid "date created"
+msgstr "تاریخ انتشار"
+
+#: .\models.py:16
+msgid "date edited"
+msgstr "تاریخ ویرایش"
+
+#: .\models.py:17
+msgid "blog Image"
+msgstr "عکس بلاگ"
+
+#: .\models.py:18
+msgid "Status"
+msgstr "وضعیت"
+
+#: .\templates\blog\blog_detail.html:5 .\templates\blog\blog_list.html:5
+#: .\templates\blog\blog_list.html:14
+msgid "Blog"
+msgstr "بلاگ"
+
+#: .\templates\blog\blog_detail.html:20
+msgid "From"
+msgstr "توسط"
+
+#: .\templates\blog\blog_list.html:42
+msgid "Read More"
+msgstr "بیشتر"

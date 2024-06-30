@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 17:23+0330\n"
+"PO-Revision-Date: 2024-06-25 15:55+0330\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: .\templates\pages\about_us.html:5 .\templates\pages\about_us.html:14
+msgid "About Us"
+msgstr "درباره ما"
+
+#: .\templates\pages\about_us.html:26
+msgid "Wellcome"
+msgstr "خوش آمدید"
+
+#: .\templates\pages\about_us.html:27
+msgid ""
+"Ali Arab Construction Group has been operating since 1373 with the aim of "
+"building safe buildings, putting quality at the forefront, and using expert "
+"and experienced engineers and efficient workers, using quality materials and "
+"facilities, along with management. The experience and knowledge of "
+"engineering has succeeded in building numerous and significant construction "
+"projects in Tehran and has been placed in the category of successful and "
+"reliable builders in Tehran and has also been selected as the top builder in "
+"Tehran's 3rd district."
+msgstr ""
+"گروه ساختمانی علی عرب با هدف ساخت ساختمان های ایمن ، با سرلوحه قرار دادن "
+"کیفیت از سال 1373 آغاز به فعالیت نموده و با بهره گیری از مهندسین متخصص و "
+"مجرب و نیرو های کارآمد، با بهره گیری از مصالح و امکانات با کیفیت در کنار "
+"مدیریت، تجربه و دانش مهندسی تا کنون موفق به ساخت پروژه های ساختمانی متعدد و "
+"شاخص در سطح تهران گردیده و در دسته سازندگان موفق و معتبر شهر تهران قرار "
+"گرفته و همچنین بعنوان سازنده برتر منطقه 3 تهران انتخاب شده اند."
+
+#: .\templates\pages\about_us.html:47
+msgid ""
+"One of the strengths of our collection is the possibility of optimal design "
+"of projects with the cooperation of experienced forces and the use of new "
+"technologies and up-to-date engineering software, which has led to the "
+"satisfaction and ease of use of the employers."
+msgstr ""
+"از توانمندی های مجموعه ما امکان طراحی بهینه پروژه ها با توجه به همکاری نیرو "
+"های با تجربه و استفاده از فناوری های نوین و نرم افزار های بروز مهندسی می "
+"باشد که سبب بهره برداری با رضایت و آسودگی خاطر کارفرمایان گردیده است."
+
+#: .\templates\pages\about_us.html:63
+msgid "Successful Projects"
+msgstr "پروژه های به اتمام رسیده"
+
+#: .\templates\pages\about_us.html:69
+msgid "In Progress Projects"
+msgstr "پروژه های در دست ساخت"
+
+#: .\templates\pages\about_us.html:76
+msgid "Team Members"
+msgstr "اعضای مجموعه"
+
+#: .\templates\pages\about_us.html:91
+msgid ""
+"Urban design and beautification and well-being in the home environment, high "
+"structural resistance, energy saving, etc. are among the things that are "
+"always important to us."
+msgstr ""
+"طراحی و زیبا سازی شهری و رفاه در محیط خانه، بالا بودن مقاومت سازه، صرفه جویی "
+"در مصرف انرژی و ... از جمله مواردی هستند که همواره برای ما حائز اهمیت است."

@@ -37,7 +37,8 @@
                     <div class="project__img-holder">
                         <a href="{% url 'project:project_detail' project.id %}">
                             {% if project.image_cover %}
-                            <img src="{{ project.image_cover.url }}" alt="{{ project.title }} cover image">
+                            <img src="{{ project.image_cover.url }}" alt="{{ project.title }} cover image"
+                                 style="margin: 0 auto; object-fit: cover; width: 100%; height: 350px;">
                             {% endif %}
                             <div class="hover-overlay">
                                 <div class="project__description">

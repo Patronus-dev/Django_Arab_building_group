@@ -16,6 +16,7 @@
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Barlow:400,600%7COpen+Sans:400,400i,700' rel='stylesheet'>
 
+
     <!-- Css -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/font-icons.css' %}"/>
@@ -85,14 +86,32 @@
                                    aria-expanded="false"></i>
                             </li>
                             <li class="nav__dropdown">
+                                <a href="{% url 'blog_list' %}" aria-haspopup="true">{% trans 'Blog' %}</a>
+                                <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
+                                   aria-expanded="false"></i>
+                            </li>
+                            <li class="nav__dropdown">
+                                <a href="#" aria-haspopup="true">{% trans 'Material' %}</a>
+                                <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
+                                   aria-expanded="false"></i>
+                                <ul class="nav__dropdown-menu">
+                                    <li><a href="#">{% trans 'Elevator' %}</a></li>
+                                    <li><a href="#">{% trans 'Cooling and heating' %}</a></li>
+                                    <li><a href="#">{% trans 'Wooden accessories' %}</a></li>
+                                    <li><a href="#">{% trans 'Door and Window' %}</a></li>
+                                    <li><a href="#">{% trans 'Facilities and Plumbing' %}</a></li>
+                                    <li><a href="#">{% trans 'Stone and ceramics' %}</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__dropdown">
                                 <a href="{% url 'project:projects_list' %}"
                                    aria-haspopup="true">{% trans 'Projects' %}</a>
                                 <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
                                    aria-expanded="false"></i>
-                                {#                                <ul class="nav__dropdown-menu">#}
-                                {#                                    <li><a href="#">{% trans 'Projects under construction' %}</a></li>#}
-                                {#                                    <li><a href="#">{% trans 'Built projects' %}</a></li>#}
-                                {#                                </ul>#}
+{#                                <ul class="nav__dropdown-menu">#}
+{#                                    <li><a href="#">{% trans 'Projects under construction' %}</a></li>#}
+{#                                    <li><a href="#">{% trans 'Built projects' %}</a></li>#}
+{#                                </ul>#}
                             </li>
                             <li class="nav__dropdown active">
                                 <a href="{% url 'home' %}" aria-haspopup="true">{% trans 'Home' %}</a>
@@ -149,63 +168,50 @@
 
         {% endblock content %}
 
+
         <!-- Footer -->
-        <footer class="footer bg-dark-overlay" style="background-image: url({% static 'img/footer/1.jpg' %}); margin-top: 10%">
-            <div class="container-fluid">
+        <footer class="footer" style="background-color: #121212; color: white">
+            <div style="direction: rtl; text-align: right" class="container-fluid">
                 <div class="footer__widgets">
-                    <div class="row">
 
-                        <div class="col-lg-3 col-md-3">
-                            <div class="widget widget-about-us">
-                                <!-- Logo -->
-                                <a href="{% url 'home' %}" class="logo-container flex-child">
-                                    <img class="logo" src="{% static 'img/logo_white.png' %}"
-                                         srcset="{% static 'img/logo_white.png' %} 1x, {% static 'img/logo_white@2x.png' %} 2x"
-                                         alt="logo">
-                                </a>
-                            </div>
-                        </div> <!-- end logo -->
+                    <!-- Logo -->
+                    <div class="col-lg-3 col-md-3" style="float: left;">
+                        <div class="widget widget-about-us">
+                                <img class="logo" src="{% static 'img/logo_nav.png' %}" alt="logo"
+                                     style="width: 150px; height: 150px">
+                        </div>
+                    </div>
+                    <!-- end logo -->
 
+                    <div class="row" style="margin-right: 10%">
+
+                        <!-- content 1 -->
                         <div class="col-lg-2 col-md-3">
+                            <h6 style="color:gold">{% trans 'shortcut' %}</h6>
                             <div class="widget widget_nav_menu">
                                 <ul>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a style="color: white" href="{% url 'about_us' %}">{% trans 'about us' %}</a></li>
+                                    <li><a style="color: white" href="{% url 'project:projects_list' %}">{% trans 'projects' %}</a></li>
                                 </ul>
                             </div>
                         </div>
+                        <!-- end content 1 -->
 
-                        <div class="col-lg-2 col-md-3">
-                            <div class="widget widget_nav_menu">
-                                <ul>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Terms &amp; Conditions</a></li>
-                                    <li><a href="#">Career</a></li>
-                                </ul>
-                            </div>
+                        <!-- Contact us -->
+                        <div style="width: 400px;">
+                            <h6 style="color:gold">{% trans 'contact us' %}</h6>
+                            <span>{% trans 'Call' %} : 021-22782136</span>
+                            <br>
+                            <span>{% trans 'E-mail' %} : aliarab.building@yahoo.com</span>
                         </div>
-
-                        <div class="col-lg-3 offset-lg-2 col-md-3">
-                            <div class="widget">
-                                <div class="socials">
-                                    <a href="#" class="social social-email" aria-label="email" title="email"
-                                       target="_blank"><i class="ui-email"></i></a>
-                                    <a href="#" class="social social-twitter" aria-label="whatsapp" title="whatsapp"
-                                       target="_blank"><i class="ui-whatsapp"></i></a>
-                                    <a href="#" class="social social-instagram" aria-label="instagram" title="instagram"
-                                       target="_blank"><i class="ui-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- end Contact us -->
 
                     </div>
                 </div>
-            </div> <!-- end container -->
-
+            </div>
+            <!-- end container -->
             <div class="footer__bottom">
-                <div class="container-fluid text-right text-md-center">
+                <div class="container-fluid text-center text-md-center">
 						<span class="copyright">
 							&copy; 2018 Sedona, Made by <a href="https://deothemes.com">DeoThemes</a>
 						</span>
