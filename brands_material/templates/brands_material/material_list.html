@@ -1,0 +1,59 @@
+{% extends '_base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block page_title %}{% translate 'Material' %}{% endblock page_title %}
+
+{% block content %}
+    <!-- Page Title -->
+    <section class="page-title bg-dark-overlay text-center"
+             style="background-image: url({% static 'img/menu-bg.png' %});">
+        <div class="container">
+            <div class="page-title__holder">
+                <h1 class="page-title__title">{% trans 'Material' %}</h1>
+            </div>
+        </div>
+    </section>
+    <!-- end page title -->
+
+    <!-- Portfolio -->
+    <section class="section-wrap">
+        <div class="container-fluid container-semi-fluid">
+
+            <!-- Filter -->
+            <div class="masonry-filter text-center">
+                <a style="font-size: 18px;" href="#" class="filter" data-filter=".آسانسور">{% trans 'Elevator' %}</a>
+                <a style="font-size: 18px;" href="#" class="filter" data-filter=".سنگ و سرامیک">{% trans 'Stone and ceramic' %}</a>
+                <a style="font-size: 18px;" href="#" class="filter" data-filter=".مواد و مصالح">{% trans 'Materials' %}</a>
+                <a style="font-size: 18px;" href="#" class="filter" data-filter=".لوازم برقی">{% trans 'Electric' %}</a>
+            </div>
+            <!-- end filter -->
+
+            <div class="row masonry-grid" style="text-align: right; direction: rtl">
+
+                {% for material in materials %}
+                    <!-- start material -->
+                    <div class="masonry-item col-lg-3 project hover-trigger {{ material.category }}">
+                        <div class="project__container">
+                            <div class="project__img-holder" style="height: 380px; object-fit: cover">
+                                    {% if material.image %}
+                                        <img src="{{ material.image.url }}" alt="{{ material.title }} cover image"
+                                             style="">
+                                    {% endif %}
+                                    <div class="hover-overlay">
+                                        <div class="project__description">
+                                            <h3 class="project__title">{{ material.title }}</h3>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end material -->
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+    <!-- end portfolio -->
+
+{% endblock content %}

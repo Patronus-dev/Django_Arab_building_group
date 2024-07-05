@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="{% static 'img/logo_nav.png' %}">
-    <link rel="apple-touch-icon" href="{% static 'img/logo_nav.png' %}">
+    <link rel="shortcut icon" href="{% static 'img/Amer-logo - no bg - nav.png' %}">
+    <link rel="apple-touch-icon" href="{% static 'img/Amer-logo - no bg - nav.png' %}">
     <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/apple-touch-icon-72x72.png' %}">
     <link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/apple-touch-icon-114x114.png' %}">
 
@@ -36,7 +36,7 @@
 <!-- Preloader -->
 <div class="loader-mask">
     <div class="loader">
-        "Loading..."
+        {% trans 'Loading...' %}
     </div>
 </div>
 
@@ -63,11 +63,11 @@
                     <div class="nav__socials d-none d-lg-block"
                          style="border-right: #7f8c8d solid 1px; padding-right: 2%">
                         <div class="socials">
-                            <a href="#" class="social social-email" aria-label="email" title="email"
+                            <a href="mailto:aliarab.building@yahoo.com" class="social social-email" aria-label="email" title="email"
                                target="_blank"><i class="ui-email"></i></a>
-                            <a href="#" class="social social-twitter" aria-label="whatsapp" title="whatsapp"
+                            <a href="https://api.whatsapp.com/send?phone=+989123456789" class="social social-twitter" aria-label="whatsapp" title="whatsapp"
                                target="_blank"><i class="ui-whatsapp"></i></a>
-                            <a href="#" class="social social-instagram" aria-label="instagram" title="instagram"
+                            <a href="https://www.instagram.com/arab_building" class="social social-instagram" aria-label="instagram" title="instagram"
                                target="_blank"><i class="ui-instagram"></i></a>
                         </div>
                     </div>
@@ -91,27 +91,19 @@
                                    aria-expanded="false"></i>
                             </li>
                             <li class="nav__dropdown">
-                                <a href="#" aria-haspopup="true">{% trans 'Material' %}</a>
+                                <a href="{% url 'material' %}" aria-haspopup="true">{% trans 'Material' %}</a>
                                 <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
                                    aria-expanded="false"></i>
-                                <ul class="nav__dropdown-menu">
-                                    <li><a href="#">{% trans 'Elevator' %}</a></li>
-                                    <li><a href="#">{% trans 'Cooling and heating' %}</a></li>
-                                    <li><a href="#">{% trans 'Wooden accessories' %}</a></li>
-                                    <li><a href="#">{% trans 'Door and Window' %}</a></li>
-                                    <li><a href="#">{% trans 'Facilities and Plumbing' %}</a></li>
-                                    <li><a href="#">{% trans 'Stone and ceramics' %}</a></li>
-                                </ul>
                             </li>
                             <li class="nav__dropdown">
                                 <a href="{% url 'project:projects_list' %}"
                                    aria-haspopup="true">{% trans 'Projects' %}</a>
                                 <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
                                    aria-expanded="false"></i>
-{#                                <ul class="nav__dropdown-menu">#}
-{#                                    <li><a href="#">{% trans 'Projects under construction' %}</a></li>#}
-{#                                    <li><a href="#">{% trans 'Built projects' %}</a></li>#}
-{#                                </ul>#}
+                                {#                                <ul class="nav__dropdown-menu">#}
+                                {#                                    <li><a href="#">{% trans 'Projects under construction' %}</a></li>#}
+                                {#                                    <li><a href="#">{% trans 'Built projects' %}</a></li>#}
+                                {#                                </ul>#}
                             </li>
                             <li class="nav__dropdown active">
                                 <a href="{% url 'home' %}" aria-haspopup="true">{% trans 'Home' %}</a>
@@ -147,11 +139,15 @@
                     <!-- end navbar -->
 
                     <!-- Logo -->
-                    <a href="{% url 'home' %}" style="width: 5%">
-                        <img class="logo" src="{% static 'img/logo_nav.png' %}"
-                             srcset="{% static 'img/logo_nav.png' %} 8x, {% static 'img/logo_nav.png' %} 8x"
+                    <a href="{% url 'home' %}" style="width: 4%">
+                        <img class="logo" src="{% static 'img/Amer-logo - no bg - nav.png' %}"
+                             srcset="{% static 'img/Amer-logo - no bg - nav.png' %} 8x, {% static 'img/Amer-logo - no bg - nav.png' %} 8x"
                              alt="logo">
                     </a>
+                    <br>
+                    <p style="font-size: medium; color: black; font-family: 'Times New Roman',serif;">
+                        AMER Engineering Group
+                    </p>
 
                 </div>
                 <!-- end flex-parent -->
@@ -170,54 +166,72 @@
 
 
         <!-- Footer -->
-        <footer class="footer" style="background-color: #121212; color: white">
-            <div style="direction: rtl; text-align: right" class="container-fluid">
-                <div class="footer__widgets">
+        <footer class="footer" style="margin-top: 5%">
+            <div style="text-align: right" class="container-fluid">
 
-                    <!-- Logo -->
-                    <div class="col-lg-3 col-md-3" style="float: left;">
-                        <div class="widget widget-about-us">
-                                <img class="logo" src="{% static 'img/logo_nav.png' %}" alt="logo"
-                                     style="width: 150px; height: 150px">
-                        </div>
+                <!-- Logo -->
+                <div class="col-lg-3 col-md-3" style="float: left; text-align: center; margin-top: 4%">
+                    <div class="widget widget-about-us">
+                        <img class="logo" src="{% static 'img/Amer-logo - no bg - nav.png' %}" alt="logo"
+                             style="width: 150px; height: 150px;">
                     </div>
-                    <!-- end logo -->
+                    <br>
+                    <p style="font-size: x-large; color: white;
+                         font-family: 'Times New Roman',serif; text-align: center">
+                        AMER Engineering Group
+                    </p>
+                    <span class="copyright">
+							&copy; 2024 AMER E.G, Made by <a href="#">Patronus</a>
+						</span>
+                </div>
+                <!-- end logo -->
+
+                <!-- start content -->
+                <div class="footer__widgets" style="direction: rtl">
 
                     <div class="row" style="margin-right: 10%">
 
+                        <!-- Contact us -->
+                        <div style="width: 400px; direction: ltr">
+                            <h6 style="color:#9F815F; margin-bottom: 7%">{% trans 'contact us' %}</h6>
+                            {% trans 'Call' %} : <a style="color: white" href="tel:+982122782136">22782136-021</a>
+                            <br>
+                            <a style="color: white;" href="mailto:aliarab.building@yahoo.com">aliarab.building@yahoo.com</a> : {% trans 'E-mail' %}
+                        </div>
+                        <!-- end Contact us -->
+
                         <!-- content 1 -->
-                        <div class="col-lg-2 col-md-3">
-                            <h6 style="color:gold">{% trans 'shortcut' %}</h6>
+                        <div class="col-lg-2 col-md-3" style="text-align: center;">
+                            <h6 style="color:#9F815F; margin-bottom: 20%">{% trans 'shortcut' %}</h6>
                             <div class="widget widget_nav_menu">
                                 <ul>
-                                    <li><a style="color: white" href="{% url 'about_us' %}">{% trans 'about us' %}</a></li>
-                                    <li><a style="color: white" href="{% url 'project:projects_list' %}">{% trans 'projects' %}</a></li>
+                                    <li>
+                                        <a style="color: white" href="{% url 'project:projects_list' %}">{% trans 'projects' %}</a>
+                                    </li>
+                                    <li>
+                                        <a style="color: white" href="{% url 'about_us' %}">{% trans 'about us' %}</a>
+                                    </li>
+                                    <li>
+                                        <a style="color: white" href="{% url 'blog_list' %}">{% trans 'Blog' %}</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <!-- end content 1 -->
 
-                        <!-- Contact us -->
-                        <div style="width: 400px;">
-                            <h6 style="color:gold">{% trans 'contact us' %}</h6>
-                            <span>{% trans 'Call' %} : 021-22782136</span>
-                            <br>
-                            <span>{% trans 'E-mail' %} : aliarab.building@yahoo.com</span>
-                        </div>
-                        <!-- end Contact us -->
-
                     </div>
                 </div>
-            </div>
-            <!-- end container -->
-            <div class="footer__bottom">
-                <div class="container-fluid text-center text-md-center">
-						<span class="copyright">
-							&copy; 2018 Sedona, Made by <a href="https://deothemes.com">DeoThemes</a>
-						</span>
+                <!-- end content -->
+
+                <!-- end container -->
+                <div class="footer__bottom" style="width: fit-content;">
+                    <div class="container-fluid text-center text-md-center"
+                         style="text-align: left;">
+                    </div>
                 </div>
+                <!-- end footer bottom -->
             </div>
-            <!-- end footer bottom -->
+
         </footer>
         <!-- end footer -->
 

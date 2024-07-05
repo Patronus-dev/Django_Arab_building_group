@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-30 21:02+0330\n"
-"PO-Revision-Date: 2024-06-30 21:12+0330\n"
+"POT-Creation-Date: 2024-07-05 01:46+0330\n"
+"PO-Revision-Date: 2024-07-05 01:46+0330\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,11 +22,15 @@ msgstr ""
 msgid "Arab building group"
 msgstr "گروه ساختمانی عرب"
 
+#: .\_base.html:39
+msgid "Loading..."
+msgstr ""
+
 #: .\_base.html:84
 msgid "About Us"
 msgstr "درباره ما"
 
-#: .\_base.html:89
+#: .\_base.html:89 .\_base.html:223
 msgid "Blog"
 msgstr "بلاگ"
 
@@ -62,39 +66,39 @@ msgstr "سنگ و سرامیک"
 msgid "Projects"
 msgstr "پروژه ها"
 
-#: .\_base.html:117 .\home.html:5
+#: .\_base.html:117 .\home.html:7
 msgid "Home"
 msgstr "صفحه اصلی"
 
-#: .\_base.html:190
-msgid "shortcut"
-msgstr "میانبر ها"
-
-#: .\_base.html:193
-msgid "about us"
-msgstr "درباره ما"
-
-#: .\_base.html:194
-msgid "projects"
-msgstr "پروژه ها"
-
-#: .\_base.html:202
+#: .\_base.html:204
 msgid "contact us"
 msgstr "ارتباط با ما"
 
-#: .\_base.html:203
+#: .\_base.html:205
 msgid "Call"
 msgstr "تماس"
 
-#: .\_base.html:205
+#: .\_base.html:207
 msgid "E-mail"
 msgstr "ایمیل"
 
-#: .\home.html:310
-msgid "Wellcome"
-msgstr ""
+#: .\_base.html:213
+msgid "shortcut"
+msgstr "میانبر ها"
 
-#: .\home.html:311
+#: .\_base.html:217
+msgid "projects"
+msgstr "پروژه ها"
+
+#: .\_base.html:220
+msgid "about us"
+msgstr "درباره ما"
+
+#: .\home.html:316
+msgid "Wellcome"
+msgstr "خوش آمدید"
+
+#: .\home.html:317
 msgid ""
 "Ali Arab Construction Group has been operating since 1373 with the aim of "
 "building safe buildings, putting quality at the forefront, and using expert "
@@ -105,57 +109,65 @@ msgid ""
 "reliable builders in Tehran and has also been selected as the top builder in"
 " Tehran's 3rd district."
 msgstr ""
+"گروه ساختمانی علی عرب با هدف ساخت ساختمان های ایمن ، با سرلوحه قرار دادن "
+"کیفیت از سال 1373 آغاز به فعالیت نموده و با بهره گیری از مهندسین متخصص و "
+"مجرب و نیرو های کارآمد، با بهره گیری از مصالح و امکانات با کیفیت در کنار "
+"مدیریت، تجربه و دانش مهندسی تا کنون موفق به ساخت پروژه های ساختمانی متعدد و "
+"شاخص در سطح تهران گردیده و در دسته سازندگان موفق و معتبر شهر تهران قرار "
+"گرفته و همچنین بعنوان سازنده برتر منطقه 3 تهران انتخاب شده اند."
 
-#: .\home.html:352
+#: .\home.html:321
+#| msgid "About Us"
+msgid "About us"
+msgstr "درباره ما"
+
+#: .\home.html:341
 msgid "Interior design"
 msgstr "طراحی داخلی"
 
-#: .\home.html:356 .\home.html:380 .\home.html:405
+#: .\home.html:345 .\home.html:369 .\home.html:394
 msgid "Modern Design"
 msgstr "طراحی مدرن"
 
-#: .\home.html:360 .\home.html:384 .\home.html:409
+#: .\home.html:349 .\home.html:373 .\home.html:398
 msgid "Unique Foundation"
 msgstr "منحصر به فرد"
 
-#: .\home.html:364 .\home.html:388 .\home.html:413
+#: .\home.html:353 .\home.html:377 .\home.html:402
 msgid "Smart Heading System"
 msgstr "سیستم هدینگ هوشمند"
 
-#: .\home.html:376
+#: .\home.html:365
 msgid "Exterior design"
 msgstr "طراحی بیرونی"
 
-#: .\home.html:401
+#: .\home.html:390
 msgid "Industrial premises"
 msgstr "اماکن صنعتی"
 
-#: .\home.html:491
-msgid "From Blog"
-msgstr "از بلاگ"
+#: .\home.html:475
+msgid "Discover Recent Works"
+msgstr "پروژه های اخیر"
 
-#: .\home.html:492
-msgid "Quick access to top blog articles"
-msgstr "دسترسی سریع به مقالات برتر وبلاگ"
+#: .\home.html:493 .\home.html:514 .\home.html:535
+msgid "More"
+msgstr "بیشتر"
 
-#: .\home.html:493
-msgid ""
-"With unique quality, we build a house beyond your expectations. Your "
-"satisfaction is our honor!"
-msgstr ""
-"ما با کیفیتی بی نظیر، خانه ای فراتر از انتظار شما می سازیم. رضایت شما افتخار"
-" ماست!"
+#~ msgid "From Blog"
+#~ msgstr "از بلاگ"
 
-#: .\home.html:497
-#| msgid "contact us"
-msgid "Contact us"
-msgstr "ارتباط با ما"
+#~ msgid "Quick access to top blog articles"
+#~ msgstr "دسترسی سریع به مقالات برتر وبلاگ"
 
-#~ msgid "Discover Recent Works"
-#~ msgstr "پروژه های اخیر"
+#~ msgid ""
+#~ "With unique quality, we build a house beyond your expectations. Your "
+#~ "satisfaction is our honor!"
+#~ msgstr ""
+#~ "ما با کیفیتی بی نظیر، خانه ای فراتر از انتظار شما می سازیم. رضایت شما افتخار"
+#~ " ماست!"
 
-#~ msgid "More"
-#~ msgstr "بیشتر"
+#~ msgid "Contact us"
+#~ msgstr "ارتباط با ما"
 
 #~ msgid "Projects under construction"
 #~ msgstr "پروژه های در حال ساخت"

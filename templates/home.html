@@ -1,4 +1,6 @@
 {% extends '_base.html' %}
+{% load blog_tags %}
+{% get_blog_detail_context blog_id %}
 {% load static %}
 {% load i18n %}
 
@@ -23,7 +25,7 @@
                     data-title="Modern Living Room"
                 >
                     <!-- MAIN IMAGE -->
-                    <img src="{% static 'img/revolution/home-1/1.jpg' %}"
+                    <img src="{% static 'img/home/home-intro(1).jpg' %}"
                          alt=""
                          data-bgrepeat="no-repeat"
                          data-bgfit="cover"
@@ -81,31 +83,8 @@
                     >The Sedona Theatre is Ireland's largest fixed-seat theatre.<br>It's located in Grand Canal
                         Square, Dublin.
                     </div>
-
-                    <!-- BUTTON -->
-                    <div class="tp-caption"
-                         data-x="30"
-                         data-y="center"
-                         data-voffset="[60,60,60,100]"
-                         data-lineheight="55"
-                         data-hoffset="0"
-                         data-frames='[{
-										"delay":1200,
-										"speed":900,
-										"frame":"0",
-										"from":"y:150px;opacity:0;",
-										"ease":"Power3.easeOut",
-										"to":"o:1;"
-										},{
-										"delay":"wait",
-										"speed":1000,
-										"frame":"999",
-										"to":"opacity:0;","ease":"Power3.easeOut"
-									}]'
-                    ><a href='#' class='btn btn--lg btn--color'>View Project</a>
-                    </div>
-
-                </li> <!-- end slide 1 -->
+                </li>
+                <!-- end slide 1 -->
 
                 <!-- SLIDE 2 -->
                 <li data-fstransition="fade"
@@ -118,7 +97,7 @@
                     data-title="Astralian Museum"
                 >
                     <!-- MAIN IMAGE -->
-                    <img src="{% static 'img/revolution/home-1/2.jpg' %}"
+                    <img src="{% static 'img/home/home-intro(2).jpg' %}"
                          alt=""
                          data-bgrepeat="no-repeat"
                          data-bgfit="cover"
@@ -176,31 +155,8 @@
                     >The Sedona Theatre is Ireland's largest fixed-seat theatre.<br>It's located in Grand Canal
                         Square, Dublin.
                     </div>
-
-                    <!-- BUTTON -->
-                    <div class="tp-caption"
-                         data-x="30"
-                         data-y="center"
-                         data-voffset="[60,60,60,100]"
-                         data-lineheight="55"
-                         data-hoffset="0"
-                         data-frames='[{
-										"delay":1200,
-										"speed":900,
-										"frame":"0",
-										"from":"y:150px;opacity:0;",
-										"ease":"Power3.easeOut",
-										"to":"o:1;"
-										},{
-										"delay":"wait",
-										"speed":1000,
-										"frame":"999",
-										"to":"opacity:0;","ease":"Power3.easeOut"
-									}]'
-                    ><a href='#' class='btn btn--lg btn--color'>View Project</a>
-                    </div>
-
-                </li> <!-- end slide 1 -->
+                </li>
+                <!-- end slide 2 -->
 
                 <!-- SLIDE 3 -->
                 <li data-fstransition="fade"
@@ -213,7 +169,79 @@
                     data-title="Horizon Urban"
                 >
                     <!-- MAIN IMAGE -->
-                    <img src="{% static 'img/revolution/home-1/3.jpg' %}"
+                    <img src="{% static 'img/home/home-intro(3).jpg' %}"
+                         alt=""
+                         data-bgrepeat="no-repeat"
+                         data-bgfit="cover"
+                         data-bgparallax="7"
+                         class="rev-slidebg"
+                    >
+
+                    <!-- HERO TITLE -->
+                    <div class="tp-caption hero-text"
+                         data-x="30"
+                         data-y="center"
+                         data-voffset="[-140,-120,-100,-180]"
+                         data-fontsize="[72,62,52,46]"
+                         data-lineheight="[72,62,52,46]"
+                         data-width="[none, none, none, 300]"
+                         data-whitespace="[nowrap, nowrap, nowrap, normal]"
+                         data-frames='[{
+									"delay":1000,
+									"speed":900,
+									"frame":"0",
+									"from":"y:150px;opacity:0;",
+									"ease":"Power3.easeOut",
+									"to":"o:1;"
+									},{
+									"delay":"wait",
+									"speed":1000,
+									"frame":"999",
+									"to":"opacity:0;","ease":"Power3.easeOut"
+								}]'
+                         data-splitout="none">Horizon Urban<span class="hero-dot">.</span>
+                    </div>
+
+                    <!-- HERO SUBTITLE -->
+                    <div class="tp-caption small-text"
+                         data-x="30"
+                         data-y="center"
+                         data-voffset="[-40,-30,-20,0]"
+                         data-fontsize="[21,21,21,21]"
+                         data-lineheight="34"
+                         data-width="[none, none, none, 300]"
+                         data-whitespace="[nowrap, nowrap, nowrap, normal]"
+                         data-frames='[{
+									"delay":1100,
+									"speed":900,
+									"frame":"0",
+									"from":"y:150px;opacity:0;",
+									"ease":"Power3.easeOut",
+									"to":"o:1;"
+									},{
+									"delay":"wait",
+									"speed":1000,
+									"frame":"999",
+									"to":"opacity:0;","ease":"Power3.easeOut"
+								}]'
+                    >The Sedona Theatre is Ireland's largest fixed-seat theatre.<br>It's located in Grand Canal
+                        Square, Dublin.
+                    </div>
+                </li>
+                <!-- end slide 3 -->
+
+                <!-- SLIDE 4 -->
+                <li data-fstransition="fade"
+                    data-transition="fade"
+                    data-easein="default"
+                    data-easeout="default"
+                    data-slotamount="1"
+                    data-masterspeed="1200"
+                    data-delay="8000"
+                    data-title="Horizon Urban"
+                >
+                    <!-- MAIN IMAGE -->
+                    <img src="{% static 'img/home/home-intro(4).jpg' %}"
                          alt=""
                          data-bgrepeat="no-repeat"
                          data-bgfit="cover"
@@ -272,31 +300,9 @@
                         Square, Dublin.
                     </div>
 
-                    <!-- BUTTON -->
-                    <div class="tp-caption"
-                         data-x="30"
-                         data-y="center"
-                         data-voffset="[60,60,60,100]"
-                         data-lineheight="55"
-                         data-hoffset="0"
-                         data-frames='[{
-										"delay":1200,
-										"speed":900,
-										"frame":"0",
-										"from":"y:150px;opacity:0;",
-										"ease":"Power3.easeOut",
-										"to":"o:1;"
-										},{
-										"delay":"wait",
-										"speed":1000,
-										"frame":"999",
-										"to":"opacity:0;","ease":"Power3.easeOut"
-									}]'
-                    ><a href='#' class='btn btn--lg btn--color'>View Project</a>
-                    </div>
 
                 </li>
-                <!-- end slide 1 -->
+                <!-- end slide 4 -->
 
             </ul>
         </div>
@@ -310,29 +316,22 @@
                     <h2 class="mb-32">{% trans "Wellcome" %}</h2>
                     <p class="lead">{% trans "Ali Arab Construction Group has been operating since 1373 with the aim of building safe buildings, putting quality at the forefront, and using expert and experienced engineers and efficient workers, using quality materials and facilities, along with management. The experience and knowledge of engineering has succeeded in building numerous and significant construction projects in Tehran and has been placed in the category of successful and reliable builders in Tehran and has also been selected as the top builder in Tehran's 3rd district." %}</p>
 
-                    <div class="row mb-lg-48" style="text-align: center">
-                        <div class="col-sm-4">
-                            <div class="feature">
-                                <i class="icon-Hotel-3 feature__icon"></i>
-                                <h4 class="feature__title">Architecture</h4>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="feature">
-                                <i class="icon-Ruler-Tool feature__icon"></i>
-                                <h4 class="feature__title">Interior Design</h4>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="feature">
-                                <i class="icon-Trowel-and-Brick feature__icon"></i>
-                                <h4 class="feature__title">Construction</h4>
-                            </div>
-                        </div>
+                    <div dir="ltr">
+                        <a href="{% url 'about_us' %}" class="btn btn--md btn--color">
+                            <span>{% trans 'About us' %}</span>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <img src="{% static 'img/intro/1.jpg' %}" class="img-full-width" alt="">
+                    <video style="width: 500px; height: 400px; margin-right: 5%"
+                           autoplay loop muted playsinline
+                           data-bgrepeat="no-repeat"
+                           data-bgfit="cover"
+                           data-bgparallax="7"
+                           class="rev-slidebg"
+                           data-playbackrate="0.5">
+                        <source src="{% static 'videos/logomotion.mp4' %}" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
@@ -426,7 +425,7 @@
              style="background-image: url({% static 'img/testimonials/bg.jpg' %})">
         <div class="container">
             <div class="title-row text-center">
-                <h3 class="section-title">Some honors</h3>
+                <h3 class="section-title">Awards and honors</h3>
                 <i class="quote">“</i>
             </div>
 
@@ -481,141 +480,135 @@
     </section>
     <!-- end testimonials -->
 
-    <!-- From Blog -->
-    <section class="section-wrap blog-grid">
+    <!-- Portfolio -->
+    <section class="section-wrap">
+        <h3 style="margin-bottom: 5%; margin-right: 15%" class="text-right">{% trans 'Discover Recent Works' %}</h3>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="blog-grid__title-col d-flex flex-column mb-lg-48">
-                        <div class="title-row">
-                            <p class="subtitle">{% trans 'From Blog' %}</p>
-                            <h2 class="section-title">{% trans 'Quick access to top blog articles' %}</h2>
-                            <p>{% trans 'With unique quality, we build a house beyond your expectations. Your satisfaction is our honor!' %}</p>
-                        </div>
-                        <div class="call-us mt-auto">
-                            <i class="icon-Dispacher-2 call-us__icon"></i>
-                            <span class="call-us__title">{% trans 'Contact us' %}</span>
-                            <a href="tel:1-800-995-3959" class="call-us__phone-number"> 1-800-995-3959</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-7 offset-lg-1">
-                    <div class="from-blog">
-                        <div class="row row-60">
-                            <div class="col-lg-6">
-                                <article class="entry">
-                                    <div class="entry__img-holder">
-                                        <a href="single-post.html">
-                                            <img src="{% static 'img/blog/from_blog_1.jpg' %}" class="entry__img" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="entry__body">
-                                        <ul class="entry__meta">
-                                            <li class="entry__meta-date">
-                                                <span>15 November 2018</span>
-                                            </li>
-                                        </ul>
-                                        <h4 class="entry__title">
-                                            <a href="single-post.html">Best buildings of 2018 revealed at day one of
-                                                World
-                                                Architecture Festival 2018.</a>
-                                        </h4>
-                                    </div>
-                                </article>
+            <div class="projects">
+                {% for project in  all_projects %}
+                    {% if project.id == 1 %}
+                        <div class="project-1">
+                            <div class="project-1__container">
+                                <div class="project__img-holder hover-scale">
+                                    <img src="{{ project.image_cover.url }}" alt=""
+                                         class="project__img">
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <article class="entry">
-                                    <div class="entry__img-holder">
-                                        <a href="single-post.html">
-                                            <img src="{% static 'img/blog/from_blog_2.jpg' %}" class="entry__img" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="entry__body">
-                                        <ul class="entry__meta">
-                                            <li class="entry__meta-date">
-                                                <span>15 November 2018</span>
-                                            </li>
-                                        </ul>
-                                        <h4 class="entry__title">
-                                            <a href="single-post.html">Sunken washroom by Studio 304 allows residents to
-                                                bathe in a garden setting.</a>
-                                        </h4>
-                                    </div>
-                                </article>
+
+                            <div class="project-1__description-holder">
+                                <div class="project-1__description">
+                                    <h3 class="project-1__title">{{ project.title }}</h3>
+                                    <p class="project-1__text">{{ project.address }}</p>
+                                    <a href="{% url 'project:project_detail' project.id %}" class="read-more">
+                                        <span class="read-more__text">{% trans 'More' %}</span>
+                                        <i class="ui-arrow-right read-more__icon"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="from-blog__recent-posts">
-                            <ul class="from-blog__recent-posts-list">
-                                <li class="from-blog__recent-posts-item">
-                                    <span class="from-blog__post-number">1</span>
-                                    <a href="single-post.html" class="from-blog__post-url">Guadalajara offers
-                                        "extraordinary
-                                        opportunities" for young architects</a>
-                                </li>
-                                <li class="from-blog__recent-posts-item">
-                                    <span class="from-blog__post-number">2</span>
-                                    <a href="single-post.html" class="from-blog__post-url">Lacy Brick by Pamphilon
-                                        ArchitectsResidentialPamphilon Architects adds textured
-                                        brick extension to Edwardian house in London</a>
-                                </li>
-                                <li class="from-blog__recent-posts-item">
-                                    <span class="from-blog__post-number">3</span>
-                                    <a href="single-post.html" class="from-blog__post-url">Guadalajara offers
-                                        "extraordinary
-                                        opportunities" for young architects</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                        <!-- end project -->
+                    {% elif project.id == 2 %}
+                        <div class="project-1">
+                            <div class="project-1__container">
+                                <div class="project__img-holder hover-scale">
+                                    <img src="{{ project.image_cover.url }}" alt=""
+                                         class="project__img">
+                                </div>
+                            </div>
 
+                            <div class="project-1__description-holder">
+                                <div class="project-1__description">
+                                    <h3 class="project-1__title">{{ project.title }}</h3>
+                                    <p class="project-1__text">{{ project.address }}</p>
+                                    <a href="{% url 'project:project_detail' project.id %}" class="read-more">
+                                        <span class="read-more__text">{% trans 'More' %}</span>
+                                        <i class="ui-arrow-right read-more__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end project -->
+                    {% elif project.id == 3 %}
+                        <div class="project-1">
+                            <div class="project-1__container">
+                                <div class="project__img-holder hover-scale">
+                                    <img src="{{ project.image_cover.url }}" alt=""
+                                         class="project__img">
+                                </div>
+                            </div>
+
+                            <div class="project-1__description-holder">
+                                <div class="project-1__description">
+                                    <h3 class="project-1__title">{{ project.title }}</h3>
+                                    <p class="project-1__text">{{ project.address }}</p>
+                                    <a href="{% url 'project:project_detail' project.id %}" class="read-more">
+                                        <span class="read-more__text">{% trans 'More' %}</span>
+                                        <i class="ui-arrow-right read-more__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end project -->
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
     </section>
-    <!-- end from blog -->
-
+    <!-- end portfolio -->
 
 {% endblock content %}
 
 
 
-
-
-{##}
-{#<!-- Portfolio -->#}
-{#<section class="section-wrap">#}
-{#    <h3 class="text-right">{% trans 'Discover Recent Works' %}</h3>#}
-{#    <div class="container">#}
-{#        {% for project in  all_projects %}#}
-{#            {% if  project.id == 2 or project.id == 3 or project.id == 1 %}#}
-{#                <div class="projects" style="margin-top: 5%">#}
-{#                <div class="project-1">#}
-{#                    <div class="project-1__container">#}
-{#                        <div class="project__img-holder hover-scale">#}
-{#                            <img style="width: 400px; height:  400px"#}
-{#                                 src="{{ project.image_cover.url }}"#}
-{#                                 alt="{{ project.title }}" class="project__img-holder">#}
+{#    <!-- From Blog -->#}
+{#    <section class="section-wrap blog-grid" style="direction: rtl; text-align: right">#}
+{#        <div class="container">#}
+{#            <div class="row">#}
+{#                <div class="col-lg-4">#}
+{#                    <div class="blog-grid__title-col d-flex flex-column mb-lg-48">#}
+{#                        <div class="title-row">#}
+{#                            <h2 class="section-title">{% trans 'Quick access to top blog articles' %}</h2>#}
+{#                            <p>{% trans 'With unique quality, we build a house beyond your expectations. Your satisfaction is our honor!' %}</p>#}
 {#                        </div>#}
-{#                    </div>#}
-{#                    <div class="project-1__description-holder"#}
-{#                         style="margin-right: 30%;height: 300px; text-align: right">#}
-{#                        <div class="project-1__description">#}
-{#                            <h3 class="project-1__title">{{ project.title }}</h3>#}
-{#                            <p class="project-1__text">{{ project.address }}</p>#}
-{#                            <a href="{% url 'project:project_detail' project.id %}" class="read-more"#}
-{#                               style="float: left">#}
-{#                                <span class="read-more__text">{% trans 'More' %}</span>#}
-{#                                <i class="ui-arrow-right read-more__icon"></i>#}
-{#                            </a>#}
+{#                        <div class="call-us mt-auto">#}
+{#                            <i class="icon-Dispacher-2 call-us__icon"></i>#}
+{#                            <span class="call-us__title">{% trans 'Contact us' %}</span>#}
+{#                            <a href="tel:1-800-995-3959" class="call-us__phone-number"> 1-800-995-3959</a>#}
 {#                        </div>#}
 {#                    </div>#}
 {#                </div>#}
-{#                <!-- end project -->#}
-{#            {% endif %}#}
-{#        {% endfor %}#}
-{#        </div>#}
 {##}
-{#    </div>#}
-{#</section>#}
-{#<!-- end portfolio -->#}
+{#                <div class="col-lg-7 offset-lg-1">#}
+{#                    <div class="from-blog">#}
+{#                        <div class="row row-60">#}
+{#                            {% for item in blog %}#}
+{#                                <div class="col-lg-6">#}
+{#                                    <article class="entry">#}
+{#                                        <div class="entry__img-holder">#}
+{#                                            <a href="{% url 'blog_detail' item.pk %}">#}
+{#                                                <img src="{{ item.image.url }}" class="entry__img" alt="">#}
+{#                                            </a>#}
+{#                                        </div>#}
+{#                                        <div class="entry__body">#}
+{#                                            <ul class="entry__meta">#}
+{#                                                <li class="entry__meta-date">#}
+{#                                                    <span>{{ item.datetime_created }}</span>#}
+{#                                                </li>#}
+{#                                            </ul>#}
+{#                                            <h4 class="entry__title">#}
+{#                                                <a href="{% url 'blog_detail' item.pk %}">{{ item.title }}</a>#}
+{#                                            </h4>#}
+{#                                        </div>#}
+{#                                    </article>#}
+{#                                </div>#}
+{#                            {% endfor %}#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#            </div>#}
+{#        </div>#}
+{#    </section>#}
+{#    <!-- end from blog -->#}
+
+

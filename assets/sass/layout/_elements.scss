@@ -12,7 +12,7 @@
   border-radius: 0;
   @include transition(all .2s ease-in-out);
   color: #000;
-  background-color: $main-color;
+  background-color: #9F815F;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   position: relative;
@@ -66,7 +66,7 @@
   }
 
   &--color {
-    background-color: $main-color;
+    background-color: #9F815F;
 
     &:hover {
       opacity: .92;
@@ -98,7 +98,7 @@
   &--white:focus,
   &--light:hover,
   &--light:focus {
-    background-color: $main-color;
+    background-color: #9F815F;
     border-color: transparent;
   }
 
@@ -133,7 +133,7 @@
 
   &:hover,
   &:focus {
-    background-color: $main-color;
+    background-color: #9F815F;
   }
 
   &.btn--color {
@@ -186,7 +186,7 @@ input[type=search] {
 
 input:focus,
 textarea:focus {
-  border-color: $main-color;
+  border-color: #9F815F;
   background-color: #fff;
   outline: none;
   box-shadow: none;
@@ -339,7 +339,7 @@ input[type="radio"] {
     & > label {
       top:-20px;
       font-size:14px;
-      color: $main-color;
+      color: #9F815F;
     }
   }
 
@@ -374,7 +374,7 @@ input[type="radio"] {
     &:focus ~ label {
       top:-20px;
       font-size:14px;
-      color: $main-color;
+      color: #9F815F;
     }
   }
 
@@ -385,7 +385,7 @@ input[type="radio"] {
     width: 0;
     bottom: 0;
     position: absolute;
-    background: $main-color;
+    background: #9F815F;
     @include transition(.2s ease all);
   }
 }
@@ -514,7 +514,7 @@ textarea.material__input {
 .owl-dot.active span,
 .owl-dot:hover span {
   opacity: 1;
-  background-color: $main-color;
+  background-color: #9F815F;
 }
 
 // Dots inside
@@ -539,7 +539,7 @@ textarea.material__input {
     background-color: transparent;
 
     &:hover {
-      background-color: $main-color;
+      background-color: #9F815F;
       color: #fff;
       border-color: transparent;
     }
@@ -585,7 +585,7 @@ textarea.material__input {
   @include transform( scale( 1.75 ) );
 
   button:before {
-    background-color: $main-color;
+    background-color: #9F815F;
   }
 }
 
@@ -754,7 +754,7 @@ textarea.material__input {
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: $main-color;
+    background-color: #9F815F;
   }
 
   &__item--active .tabs__url {

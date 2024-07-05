@@ -8,7 +8,7 @@ class BlogListView(generic.ListView):
     model = Blog
     template_name = 'blog/blog_list.html'
     context_object_name = 'blogs'
-    paginate_by = 6
+    paginate_by = 1
 
 
 class BlogDetailView(generic.DetailView):

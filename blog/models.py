@@ -14,7 +14,7 @@ class Blog(models.Model):
     text = models.TextField(verbose_name=_('Text'), max_length=1000)
     datetime_created = models.DateTimeField(verbose_name=_('date created'), auto_now_add=True)
     datetime_modified = models.DateTimeField(verbose_name=_('date edited'), auto_now=True)
-    image = models.ImageField(verbose_name=_('blog Image'), upload_to='blog/blog_cover/', blank=True)
+    image = models.ImageField(verbose_name=_('blog Image'), upload_to='blog/blog_cover/', blank=False)
     status = models.CharField(verbose_name=_('Status'), choices=STATUS_CHOICES, max_length=3)
 
     def __str__(self):

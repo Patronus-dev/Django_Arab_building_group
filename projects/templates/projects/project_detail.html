@@ -12,28 +12,25 @@
             <div class="projects">
                 <div class="project-1">
                     <div class="project-1__container">
-                        <div class="project__img-holder hover-scale">
-                            <a href="#">
-                                <img src="{{ project.image_cover.url }}" alt="" class="project__img">
-                            </a>
+                        <div class="project__img-holder hover-scale" style="height: fit-content">
+                            <img style="object-fit: cover;" src="{{ project.image_cover.url }}" alt="" class="project__img">
                         </div>
                     </div>
 
                     <div class="project-1__description-holder">
-                        <div class="project-1__description" style="text-align: right; direction: rtl">
-                            <h3 class="project-1__title">{{ project.title }}</h3>
-                            <p class="project-1__text">{{ project.address }}</p>
-                            <a href="#description" class="read-more" style="float: left">
-                                <span class="read-more__text">{% trans 'More' %}</span>
-                                <i class="ui-arrow-left read-more__icon"></i>
-                            </a>
+                        <div class="project-1__description" style="width: 45%; float: right; text-align: right;
+                                                                   direction: rtl ; border-left: solid white 1px; margin: 0 auto;">
+                            <h3 class="project-1__title">{% trans 'Project' %}</h3>
+                            <h3 style="margin-right: 6%" class="project-1__title">{{ project.title }}</h3>
                         </div>
+                        <p style="font-size: x-large; color: white; font-family: 'Times New Roman',serif;
+                                  text-align: center; float: left; margin-top: 10%;">
+                            AMER<br>Engineering Group
+                        </p>
                     </div>
                 </div>
                 <!-- end project -->
-
             </div>
-
         </div>
     </section>
     <!-- end portfolio -->
@@ -53,17 +50,6 @@
                     <h4>{% trans "Project Goals" %}</h4>
                     <p>{% trans "Creating a safe, comfortable and modern environment for individuals and families, we strive to meet the diverse needs of our customers by focusing on the quality of construction, the use of high-quality materials and modern technologies." %}
                     </p>
-                    <br>
-                    <div class="gallery gallery-size-large">
-                        {% for item in project %}
-                            <figure class="gallery-item">
-                                <div class="gallery-icon landscape">
-                                    <img src="{{ item.image_gallery.url }}" class="attachment-large size-large"
-                                         alt="">
-                                </div>
-                            </figure>
-                        {% endfor %}
-                    </div>
                     <br>
                     <h4>{% trans "Our Approach" %}</h4>
                     <p>{% trans "Using expert and experienced teams, we carry out the construction processes with precision and detailed planning to get the best results. Applying environmentally friendly methods and smart technologies is part of our commitment to sustainability and foresight. Also, we believe in the importance of continuous and transparent communication with customers and partners and we try to gain their trust and satisfaction by creating positive and constructive interactions. This comprehensive approach helps us to provide projects with superior quality and in accordance with the current needs of the society." %}
@@ -102,13 +88,15 @@
 
     <!-- Start Portfolio Single -->
     <div style="width: 60%; margin: 0 auto;">
-        <h4 style="text-align: right" class="pb-32">{% trans 'Photos gallery' %}</h4>
-        <div class="slick-single-image">
-            {% for item in project %}
-                <img style="height: 550px;" src="{{ item.image_gallery.url }}" class="project__featured-img"
-                     alt="{{ item.title }}">
-            {% endfor %}
-        </div>
+        {% if image_gallery %}
+            <h4 style="text-align: right" class="pb-32">{% trans 'Photos gallery' %}</h4>
+            <div class="slick-single-image">
+                {% for item in project %}
+                    <img style="height: 550px; background-size: cover" src="{{ item.image_gallery.url }}" class="project__featured-img"
+                         alt="{{ item.title }}">
+                {% endfor %}
+            </div>
+        {% endif %}
     </div>
     <!-- End Portfolio Single -->
 

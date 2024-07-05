@@ -18,7 +18,7 @@
 
   &__container {
     position: relative;
-    
+
     &--side-padding {
       @include bp-xl-up {
         padding: 0 70px;
@@ -31,7 +31,7 @@
       @include bp-lg-down {
         padding: 0 20px;
       }
-    }      
+    }
   }
 
   &__container-box {
@@ -40,7 +40,7 @@
     border-radius: 2px;
     position: relative;
   }
-  
+
   &__menu,
   &__dropdown-menu {
     list-style: none;
@@ -56,7 +56,7 @@
     flex-wrap: wrap;
 
     li {
-      position: relative;      
+      position: relative;
     }
 
     & > li > a {
@@ -94,7 +94,7 @@
 
     &__dropdown-menu {
       position: absolute;
-      left: -5px;      
+      left: -5px;
       top: 100%;
       z-index: 1000;
       min-width: 220px;
@@ -109,7 +109,7 @@
       display: block;
       visibility: hidden;
       opacity: 0;
-      @include transition (all .2s ease-in-out);
+      @include transition(all .2s ease-in-out);
 
       & > li > a {
         color: $text-color;
@@ -178,7 +178,7 @@
 /* Logo
 -------------------------------------------------------*/
 .logo {
-    line-height: 1;
+  line-height: 1;
 }
 
 
@@ -243,7 +243,7 @@ header .flex-parent {
 
   &__phone-number,
   &__email {
-    font-size: 14px;    
+    font-size: 14px;
   }
 }
 
@@ -290,12 +290,12 @@ header .flex-parent {
 .nav__holder {
 
   &.offset {
-    @include transform (translate3d(0, -100%, 0));
-    @include transition ($all);
+    @include transform(translate3d(0, -100%, 0));
+    @include transition($all);
   }
 
   &.scrolling {
-    @include transform (translate3d(0, 0px, 0));
+    @include transform(translate3d(0, 0px, 0));
   }
 
   &.sticky {
@@ -338,7 +338,7 @@ header .flex-parent {
 /* Nav Side
 -------------------------------------------------------*/
 @include bp-lg-up {
-  .nav--side {    
+  .nav--side {
     z-index: 500;
     height: 100%;
     width: 240px;
@@ -388,7 +388,7 @@ header .flex-parent {
       left: 0;
       top: auto;
       background-color: transparent;
-      @include transition( none );
+      @include transition(none);
     }
 
     .nav__dropdown-menu .nav__dropdown-menu {
@@ -427,7 +427,7 @@ header .flex-parent {
       }
     }
 
-    .nav__phone--mobile  {
+    .nav__phone--mobile {
       margin-top: 40px;
     }
   }
@@ -471,7 +471,7 @@ header .flex-parent {
     .nav__wrap {
       display: none !important;
     }
-  }  
+  }
 }
 
 
@@ -481,7 +481,7 @@ header .flex-parent {
   padding: 0;
   display: inline-block;
   cursor: pointer;
-  @include transition( 0.15s linear );
+  @include transition(0.15s linear);
   font: inherit;
   color: inherit;
   text-transform: none;
@@ -515,7 +515,7 @@ header .flex-parent {
     height: 1px;
     background-color: $heading-color;
     position: absolute;
-    @include transition( .2s all );
+    @include transition(.2s all);
   }
 
   &:hover .nav-icon-toggle__inner,
@@ -559,7 +559,7 @@ header .flex-parent {
     width: 320px;
     z-index: 121;
     overflow-y: auto;
-    @include transition( transform .5s cubic-bezier(0.55, 0, 0.1, 1) );
+    @include transition(transform .5s cubic-bezier(0.55, 0, 0.1, 1));
     @include transform(translateX(320px));
 
     &--is-open {
@@ -582,7 +582,7 @@ header .flex-parent {
       &-button {
         padding: 0;
         background: transparent;
-        border: 0;        
+        border: 0;
         color: $text-color;
         height: 24px;
 
@@ -610,8 +610,8 @@ header .flex-parent {
     z-index: 121;
     visibility: hidden;
     opacity: 0;
-    @include transition( .3s cubic-bezier(.16,.36,0,.98) );
-    background-color: rgba(#000,.5);
+    @include transition(.3s cubic-bezier(.16, .36, 0, .98));
+    background-color: rgba(#000, .5);
 
     &--is-visible {
       opacity: 1;
@@ -772,12 +772,12 @@ header .flex-parent {
   right: 20px;
   line-height: 34px;
   background-color: $bg-light;
-  box-shadow: 0px 1px 4px 0px rgba( 154, 161, 171, .4 );
-  @include transition ($all);
+  box-shadow: 0px 1px 4px 0px rgba(154, 161, 171, .4);
+  @include transition($all);
   text-decoration: none;
 
   i {
-    @include transition ($all);
+    @include transition($all);
   }
 
   a {
@@ -818,7 +818,7 @@ header .flex-parent {
     &__header {
       height: $nav-short-height;
       @include display-flex;
-      align-items: center;      
+      align-items: center;
     }
 
 
@@ -830,7 +830,7 @@ header .flex-parent {
       padding: 0;
       line-height: 46px;
       height: 46px;
-      display: block;      
+      display: block;
       border-bottom: 1px solid $border-color;
     }
 

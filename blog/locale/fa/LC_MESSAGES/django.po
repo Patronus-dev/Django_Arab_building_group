@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-30 22:52+0330\n"
-"PO-Revision-Date: 2024-06-30 22:52+0330\n"
+"POT-Creation-Date: 2024-07-04 04:11+0330\n"
+"PO-Revision-Date: 2024-07-04 03:24+0330\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -63,6 +63,14 @@ msgstr "بلاگ"
 msgid "From"
 msgstr "توسط"
 
-#: .\templates\blog\blog_list.html:42
+#: .\templates\blog\blog_list.html:43
 msgid "Read More"
 msgstr "بیشتر"
+
+#: .\templates\blog\blog_list.html:57
+msgid "Next"
+msgstr "بعدی"
+
+#: .\templates\blog\blog_list.html:63
+msgid "Previous"
+msgstr "قبلی"
