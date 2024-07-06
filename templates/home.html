@@ -481,7 +481,7 @@
     <!-- end testimonials -->
 
     <!-- Portfolio -->
-    <section class="section-wrap">
+    <section class="section-wrap" style="text-align: right">
         <h3 style="margin-bottom: 5%; margin-right: 15%" class="text-right">{% trans 'Discover Recent Works' %}</h3>
         <div class="container">
             <div class="projects">
@@ -496,12 +496,20 @@
                             </div>
 
                             <div class="project-1__description-holder">
-                                <div class="project-1__description">
-                                    <h3 class="project-1__title">{{ project.title }}</h3>
-                                    <p class="project-1__text">{{ project.address }}</p>
-                                    <a href="{% url 'project:project_detail' project.id %}" class="read-more">
-                                        <span class="read-more__text">{% trans 'More' %}</span>
-                                        <i class="ui-arrow-right read-more__icon"></i>
+                                <div class="project-1__description" style="width: 45%; float: right; text-align: right;
+                                                                   direction: rtl ; border-left: solid white 1px; margin: 0 auto;">
+                                    <h3 class="project-1__title">{% trans 'Project' %}</h3>
+                                    <h3 style="margin-right: 6%" class="project-1__title">{{ project.title }}</h3>
+                                </div>
+                                <p style="font-size: x-large; color: white; font-family: 'Times New Roman',serif;
+                                  text-align: center; float: left; margin-top: 10%;">
+                                    AMER<br>Engineering Group
+                                </p>
+                                <div style="text-align: center;">
+                                    <a href="{% url 'project:project_detail' project.id %}"
+                                       class="btn btn--md btn--color"
+                                       style="background-color: #EFEBDF; float: left; margin-top: 2%; margin-left: 15%">
+                                        <span>{% trans 'More' %}</span>
                                     </a>
                                 </div>
                             </div>
@@ -517,12 +525,20 @@
                             </div>
 
                             <div class="project-1__description-holder">
-                                <div class="project-1__description">
-                                    <h3 class="project-1__title">{{ project.title }}</h3>
-                                    <p class="project-1__text">{{ project.address }}</p>
-                                    <a href="{% url 'project:project_detail' project.id %}" class="read-more">
-                                        <span class="read-more__text">{% trans 'More' %}</span>
-                                        <i class="ui-arrow-right read-more__icon"></i>
+                                <div class="project-1__description" style="width: 45%; float: right; text-align: right;
+                                                                   direction: rtl ; border-left: solid white 1px; margin: 0 auto;">
+                                    <h3 class="project-1__title">{% trans 'Project' %}</h3>
+                                    <h3 style="margin-right: 6%" class="project-1__title">{{ project.title }}</h3>
+                                </div>
+                                <p style="font-size: x-large; color: white; font-family: 'Times New Roman',serif;
+                                  text-align: center; float: left; margin-top: 10%;">
+                                    AMER<br>Engineering Group
+                                </p>
+                                <div style="text-align: center;">
+                                    <a href="{% url 'project:project_detail' project.id %}"
+                                       class="btn btn--md btn--color"
+                                       style="background-color: #EFEBDF; float: left; margin-top: 2%; margin-left: 15%">
+                                        <span>{% trans 'More' %}</span>
                                     </a>
                                 </div>
                             </div>
@@ -538,12 +554,20 @@
                             </div>
 
                             <div class="project-1__description-holder">
-                                <div class="project-1__description">
-                                    <h3 class="project-1__title">{{ project.title }}</h3>
-                                    <p class="project-1__text">{{ project.address }}</p>
-                                    <a href="{% url 'project:project_detail' project.id %}" class="read-more">
-                                        <span class="read-more__text">{% trans 'More' %}</span>
-                                        <i class="ui-arrow-right read-more__icon"></i>
+                                <div class="project-1__description" style="width: 45%; float: right; text-align: right;
+                                                                   direction: rtl ; border-left: solid white 1px; margin: 0 auto;">
+                                    <h3 class="project-1__title">{% trans 'Project' %}</h3>
+                                    <h3 style="margin-right: 6%" class="project-1__title">{{ project.title }}</h3>
+                                </div>
+                                <p style="font-size: x-large; color: white; font-family: 'Times New Roman',serif;
+                                  text-align: center; float: left; margin-top: 10%;">
+                                    AMER<br>Engineering Group
+                                </p>
+                                <div style="text-align: center;">
+                                    <a href="{% url 'project:project_detail' project.id %}"
+                                       class="btn btn--md btn--color"
+                                       style="background-color: #EFEBDF; float: left; margin-top: 2%; margin-left: 15%">
+                                        <span>{% trans 'More' %}</span>
                                     </a>
                                 </div>
                             </div>
