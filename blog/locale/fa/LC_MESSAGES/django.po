@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-04 04:11+0330\n"
-"PO-Revision-Date: 2024-07-04 03:24+0330\n"
+"POT-Creation-Date: 2024-07-08 20:39+0330\n"
+"PO-Revision-Date: 2024-07-08 20:40+0330\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -54,23 +54,28 @@ msgstr "عکس بلاگ"
 msgid "Status"
 msgstr "وضعیت"
 
-#: .\templates\blog\blog_detail.html:5 .\templates\blog\blog_list.html:5
-#: .\templates\blog\blog_list.html:14
+#: .\templates\blog\blog_detail.html:7 .\templates\blog\blog_list.html:7
+#: .\templates\blog\blog_list.html:16
 msgid "Blog"
 msgstr "بلاگ"
 
-#: .\templates\blog\blog_detail.html:20
+#: .\templates\blog\blog_detail.html:19 .\templates\blog\blog_list.html:39
+msgid "Date of Release"
+msgstr "تاریخ انتشار"
+
+#: .\templates\blog\blog_detail.html:23
 msgid "From"
 msgstr "توسط"
 
-#: .\templates\blog\blog_list.html:43
-msgid "Read More"
+#: .\templates\blog\blog_list.html:46
+#| msgid "Read More"
+msgid "More"
 msgstr "بیشتر"
 
-#: .\templates\blog\blog_list.html:57
+#: .\templates\blog\blog_list.html:60
 msgid "Next"
 msgstr "بعدی"
 
-#: .\templates\blog\blog_list.html:63
+#: .\templates\blog\blog_list.html:66
 msgid "Previous"
 msgstr "قبلی"

@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.shortcuts import reverse
+from ckeditor.fields import RichTextField
 
 
 class Blog(models.Model):
@@ -11,7 +12,7 @@ class Blog(models.Model):
 
     title = models.CharField(verbose_name=_('Title'), max_length=100, blank=False)
     author = models.CharField(verbose_name=_('Author'), max_length=50, blank=False)
-    text = models.TextField(verbose_name=_('Text'), max_length=1000)
+    text = RichTextField()
     datetime_created = models.DateTimeField(verbose_name=_('date created'), auto_now_add=True)
     datetime_modified = models.DateTimeField(verbose_name=_('date edited'), auto_now=True)
     image = models.ImageField(verbose_name=_('blog Image'), upload_to='blog/blog_cover/', blank=False)

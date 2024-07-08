@@ -1,6 +1,8 @@
 {% extends '_base.html' %}
 {% load static %}
 {% load i18n %}
+{% load jalali_tags %}
+{% load persian_translation_tags %}
 
 {% block page_title %}{% translate 'Blog' %}{% endblock page_title %}
 
@@ -18,29 +20,26 @@
     <!-- end page title -->
 
     <!-- Blog -->
-    <section class="section-wrap" style="direction: rtl">
+    <section class="section-wrap" dir="rtl">
         <div class="container">
             <div class="row">
                 {% for blog in blogs %}
                     <div class="col-lg-4 col-md-6">
                         <article class="entry">
                             <div class="entry__img-holder">
-                                <a href="{% url 'blog_detail' blog.pk %}">
-                                    <img style="width: 500px; height: 350px" src="{{ blog.image.url }}"
-                                         class="entry__img" alt="">
+                                <a href="{% url 'blog_detail' blog.id %}">
+                                    <img style="height: 350px" src="{{ blog.image.url }}" class="entry__img" alt="blog cover">
                                 </a>
                             </div>
-                            <div class="entry__body" style="text-align: right">
+                            <div class="entry__body" style="text-align: right; direction: rtl">
+                                <h2 class="entry__title">{{ blog.title }}</h2>
                                 <ul class="entry__meta">
                                     <li class="entry__meta-date">
-                                        <span style="text-align: right">{{ blog.datetime_created }}</span>
+                                        <span>{{ blog.datetime_created|to_jalali:'%Y/%m/%d'|translate_number }}</span>
                                     </li>
                                 </ul>
-                                <h2 class="entry__title">
-                                    <a href="{% url 'blog_detail' blog.pk %}">{{ blog.title }}</a>
-                                </h2>
                                 <a href="{% url 'blog_detail' blog.id %}" class="read-more">
-                                    <span class="read-more__text">{% trans 'Read More' %}</span>
+                                    <span class="read-more__text">{% trans 'More' %}</span>
                                     <i class="ui-arrow-left read-more__icon"></i>
                                 </a>
                             </div>
@@ -49,22 +48,6 @@
                 {% endfor %}
             </div>
             <!-- end row -->
-
-            <!-- Pagination -->
-                <nav class="pagination">
-                    {% if page_obj.has_next %}
-                        <a style="width: 10%" href="?page={{ page_obj.next_page_number }}"
-                           class="page-numbers">{% trans 'Next' %}</a>
-                    {% endif %}
-                    <span aria-current="page" class="page-numbers current">{{ page_obj.number }}</span>
-                    {% if page_obj.has_previous %}
-                        <a href="?page={{ page_obj.previous_page_number }}">
-                            <span style="width: 10%" aria-current="page"
-                                  class="page-numbers">{% trans 'Previous' %}</span>
-                        </a>
-                    {% endif %}
-                </nav>
-
         </div>
     </section>
     <!-- end blog -->

@@ -1,6 +1,8 @@
 {% extends '_base.html' %}
 {% load static %}
 {% load i18n %}
+{% load jalali_tags %}
+{% load persian_translation_tags %}
 
 {% block page_title %}{% translate 'Projects' %}{% endblock page_title %}
 
@@ -29,22 +31,25 @@
             </div>
             <!-- end filter -->
 
-            <div class="row masonry-grid">
+            <div class="row masonry-grid" id="project-grid">
 
                 {% for project in projects %}
                     <!-- start project -->
                     <div class="masonry-item col-lg-3 project hover-trigger {{ project.status }}">
-                        <div class="project__container">
+                        <div class="project__container" style="float: right">
                             <div class="project__img-holder" style="height: fit-content">
                                 <a href="{% url 'project:project_detail' project.id %}">
                                     {% if project.image_cover %}
-                                        <img src="{{ project.image_cover.url }}" alt="{{ project.title }} cover image"
-                                             style="">
+                                        <img src="{{ project.image_cover.url }}"
+                                             alt="{{ project.title }} cover image">
+                                    {% else %}
+                                        <img src="{% static 'img/under-construction.jpg' %}"
+                                             alt="{{ project.title }} cover image">
                                     {% endif %}
                                     <div class="hover-overlay">
                                         <div class="project__description">
                                             <h3 class="project__title">{{ project.title }}</h3>
-                                            <span class="project__date">{{ project.date_construction }}</span>
+                                            <span class="project__date">{{ project.date_construction|translate_number }}</span>
                                         </div>
                                     </div>
                                 </a>
@@ -53,10 +58,8 @@
                     </div>
                     <!-- end project -->
                 {% endfor %}
-
             </div>
         </div>
     </section>
     <!-- end portfolio -->
-
 {% endblock content %}

@@ -1,6 +1,7 @@
 {% extends '_base.html' %}
 {% load static %}
 {% load i18n %}
+{% load persian_translation_tags %}
 
 {% block page_title %}{% translate 'Project' %} : {{ project.title }}{% endblock page_title %}
 
@@ -13,7 +14,13 @@
                 <div class="project-1">
                     <div class="project-1__container">
                         <div class="project__img-holder hover-scale" style="height: fit-content">
-                            <img style="object-fit: cover;" src="{{ project.image_cover.url }}" alt="" class="project__img">
+                            {% if project.image_cover %}
+                                <img src="{{ project.image_cover.url }}"
+                                     alt="{{ project.title }} cover image">
+                            {% else %}
+                                <img src="{% static 'img/under-construction.jpg' %}"
+                                     alt="{{ project.title }} cover image">
+                            {% endif %}
                         </div>
                     </div>
 
@@ -71,7 +78,7 @@
                         </li>
                         <li class="project__meta-item">
                             <span class="project__meta-label">{% trans 'Date' %}:</span>
-                            <span class="project__meta-value">{{ project.date_construction }}</span>
+                            <span class="project__meta-value">{{ project.date_construction|translate_number }}</span>
                         </li>
                         <li class="project__meta-item">
                             <span class="project__meta-label">{% trans 'Location' %}:</span>
@@ -92,7 +99,8 @@
             <h4 style="text-align: right" class="pb-32">{% trans 'Photos gallery' %}</h4>
             <div class="slick-single-image">
                 {% for item in project %}
-                    <img style="height: 550px; background-size: cover" src="{{ item.image_gallery.url }}" class="project__featured-img"
+                    <img style="max-width: 100%; max-height: 550px; width: auto; height: auto; object-fit: contain;"
+                         src="{{ item.image_gallery.url }}" class="project__featured-img"
                          alt="{{ item.title }}">
                 {% endfor %}
             </div>

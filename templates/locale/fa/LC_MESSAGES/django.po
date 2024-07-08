@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-05 01:46+0330\n"
-"PO-Revision-Date: 2024-07-05 01:46+0330\n"
+"POT-Creation-Date: 2024-07-08 20:37+0330\n"
+"PO-Revision-Date: 2024-07-08 20:38+0330\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,87 +18,121 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\_base.html:8
-msgid "Arab building group"
-msgstr "گروه ساختمانی عرب"
+#: .\_base.html:7
+msgid "Amer Engineering Group"
+msgstr "گروه مهندسی عامر"
 
-#: .\_base.html:39
+#: .\_base.html:38
 msgid "Loading..."
 msgstr ""
 
-#: .\_base.html:84
+#: .\_base.html:83
 msgid "About Us"
 msgstr "درباره ما"
 
-#: .\_base.html:89 .\_base.html:223
+#: .\_base.html:88 .\_base.html:214
 msgid "Blog"
 msgstr "بلاگ"
 
-#: .\_base.html:94
+#: .\_base.html:93
 msgid "Material"
 msgstr "متریال"
 
-#: .\_base.html:98
-msgid "Elevator"
-msgstr "آسانسور"
-
 #: .\_base.html:99
-msgid "Cooling and heating"
-msgstr "سرمایش و گرمایش"
-
-#: .\_base.html:100
-msgid "Wooden accessories"
-msgstr "لوازم چوبی"
-
-#: .\_base.html:101
-msgid "Door and Window"
-msgstr "درب و پنجره"
-
-#: .\_base.html:102
-msgid "Facilities and Plumbing"
-msgstr "تاسیسات و اتصالات"
-
-#: .\_base.html:103
-msgid "Stone and ceramics"
-msgstr "سنگ و سرامیک"
-
-#: .\_base.html:108
 msgid "Projects"
 msgstr "پروژه ها"
 
-#: .\_base.html:117 .\home.html:7
+#: .\_base.html:108 .\home.html:9
 msgid "Home"
 msgstr "صفحه اصلی"
 
-#: .\_base.html:204
+#: .\_base.html:195
 msgid "contact us"
 msgstr "ارتباط با ما"
 
-#: .\_base.html:205
+#: .\_base.html:196
 msgid "Call"
 msgstr "تماس"
 
-#: .\_base.html:207
+#: .\_base.html:198
 msgid "E-mail"
 msgstr "ایمیل"
 
-#: .\_base.html:213
+#: .\_base.html:204
 msgid "shortcut"
 msgstr "میانبر ها"
 
-#: .\_base.html:217
+#: .\_base.html:208
 msgid "projects"
 msgstr "پروژه ها"
 
-#: .\_base.html:220
+#: .\_base.html:211
 msgid "about us"
 msgstr "درباره ما"
 
-#: .\home.html:316
+#: .\home.html:63
+msgid "Impressive view"
+msgstr "نمای چشمگیر"
+
+#: .\home.html:89
+msgid ""
+"The combination of art and modern architecture, a face that simultaneously "
+"provides the beauty of design and the value of performance."
+msgstr ""
+"تلفیق هنر و معماری مدرن، چهره ای که به‌ طور همزمان زیبایی طراحی و ارزش "
+"عملکرد را فراهم می‌آورد."
+
+#: .\home.html:135
+msgid "New structures"
+msgstr "سازه های نوین"
+
+#: .\home.html:161
+msgid ""
+"Creating beautiful and impressive buildings as well as influencing the urban"
+" living environment"
+msgstr "خلق بنا های زیبا و چشمگیر و همچنین تاثیر گذار بر محیط زندگی شهری"
+
+#: .\home.html:207
+msgid "High quality materials"
+msgstr "کیفیت مطلوب"
+
+#: .\home.html:234
+msgid ""
+"Using high-quality materials and experienced and efficient forces,we offer "
+"high quality and trust to our customers,"
+msgstr ""
+"استفاده از مصالح مرغوب و نیروهای مجرب و کارآمد،\n"
+" اعتماد و کیفیت بالایی را به مشتریانمان ارائه می‌دهیم"
+
+#: .\home.html:236
+msgid "in order to build buildings with unparalleled strength and beauty."
+msgstr "تا ساختمان‌هایی با استحکام و زیبایی بی‌نظیر احداث کنیم."
+
+#: .\home.html:282
+msgid "Modern design"
+msgstr "طراحی مدرن"
+
+#: .\home.html:310
+msgid ""
+"With modern design and use of open spaces and natural light, we create a "
+"beautiful, efficient and peaceful environment for residents."
+msgstr ""
+"ما با طراحی مدرن و استفاده از فضاهای باز و نور طبیعی محیطی زیبا، کارآمد و "
+"آرام برای ساکنان ایجاد می کنیم."
+
+#: .\home.html:313
+msgid ""
+"The use of new ideas and quality materials brings a unique balance between "
+"beauty and performance."
+msgstr ""
+"استفاده از ایده های نو و متریال با کیفیت، توازنی بی‌نظیر بین زیبایی و عملکرد"
+" به ارمغان می‌آورد."
+
+#: .\home.html:328
 msgid "Wellcome"
 msgstr "خوش آمدید"
 
-#: .\home.html:317
+#: .\home.html:329
 msgid ""
 "Ali Arab Construction Group has been operating since 1373 with the aim of "
 "building safe buildings, putting quality at the forefront, and using expert "
@@ -116,42 +150,74 @@ msgstr ""
 "شاخص در سطح تهران گردیده و در دسته سازندگان موفق و معتبر شهر تهران قرار "
 "گرفته و همچنین بعنوان سازنده برتر منطقه 3 تهران انتخاب شده اند."
 
-#: .\home.html:321
-#| msgid "About Us"
+#: .\home.html:333
 msgid "About us"
 msgstr "درباره ما"
 
-#: .\home.html:341
+#: .\home.html:363
 msgid "Interior design"
 msgstr "طراحی داخلی"
 
-#: .\home.html:345 .\home.html:369 .\home.html:394
+#: .\home.html:367 .\home.html:391 .\home.html:416
 msgid "Modern Design"
 msgstr "طراحی مدرن"
 
-#: .\home.html:349 .\home.html:373 .\home.html:398
+#: .\home.html:371 .\home.html:395 .\home.html:420
 msgid "Unique Foundation"
 msgstr "منحصر به فرد"
 
-#: .\home.html:353 .\home.html:377 .\home.html:402
+#: .\home.html:375 .\home.html:399 .\home.html:424
 msgid "Smart Heading System"
 msgstr "سیستم هدینگ هوشمند"
 
-#: .\home.html:365
+#: .\home.html:387
 msgid "Exterior design"
 msgstr "طراحی بیرونی"
 
-#: .\home.html:390
+#: .\home.html:412
 msgid "Industrial premises"
 msgstr "اماکن صنعتی"
 
-#: .\home.html:475
+#: .\home.html:497
 msgid "Discover Recent Works"
 msgstr "پروژه های اخیر"
 
-#: .\home.html:493 .\home.html:514 .\home.html:535
+#: .\home.html:513 .\home.html:542 .\home.html:570
+#, fuzzy
+#| msgid "Projects"
+msgid "Project"
+msgstr "پروژه ها"
+
+#: .\home.html:524 .\home.html:552 .\home.html:580
 msgid "More"
 msgstr "بیشتر"
+
+#~ msgid "Arab building group"
+#~ msgstr "گروه ساختمانی عرب"
+
+#~ msgid "Using high-quality materials and experienced and efficient forces,"
+#~ msgstr "استفاده از مصالح مرغوب و نیروهای مجرب و کارآمد،"
+
+#~ msgid "we offer high quality and trust to our customers,"
+#~ msgstr "اعتماد و کیفیت بالایی را به مشتریانمان ارائه می‌دهیم"
+
+#~ msgid "Elevator"
+#~ msgstr "آسانسور"
+
+#~ msgid "Cooling and heating"
+#~ msgstr "سرمایش و گرمایش"
+
+#~ msgid "Wooden accessories"
+#~ msgstr "لوازم چوبی"
+
+#~ msgid "Door and Window"
+#~ msgstr "درب و پنجره"
+
+#~ msgid "Facilities and Plumbing"
+#~ msgstr "تاسیسات و اتصالات"
+
+#~ msgid "Stone and ceramics"
+#~ msgstr "سنگ و سرامیک"
 
 #~ msgid "From Blog"
 #~ msgstr "از بلاگ"

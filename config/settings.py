@@ -32,6 +32,10 @@ INSTALLED_APPS = [
 
     # third party
     'rosetta',
+    'jalali_date',
+    'jdatetime',
+    'ckeditor',
+    'ckeditor_uploader',
 
     # my apps
     'accounts',
@@ -39,6 +43,7 @@ INSTALLED_APPS = [
     'projects',
     'blog',
     'brands_material',
+    'persian',
 ]
 
 MIDDLEWARE = [
@@ -147,3 +152,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # accounts config
 AUTH_USER_MODEL = 'accounts.CustomUser'
+
+# CKEditor settings
+CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+        'height': 300,
+        'width': '100%',
+    },
+}

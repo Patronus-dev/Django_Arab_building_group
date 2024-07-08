@@ -10,6 +10,7 @@ urlpatterns = [
     path('projects/', include('projects.urls')),
     path('blog/', include('blog.urls')),
     path('materials/', include('brands_material.urls')),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
 
     # Rosetta
     path('rosetta/', include('rosetta.urls')),

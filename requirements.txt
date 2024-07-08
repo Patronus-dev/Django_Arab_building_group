@@ -11,3 +11,5 @@ requests==2.32.3
 sqlparse==0.4.2
 tzdata==2021.5
 urllib3==2.2.2
+jdatetime~=5.0.0
+django-ckeditor~=6.7.1

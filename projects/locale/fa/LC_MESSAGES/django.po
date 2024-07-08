@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-04 04:12+0330\n"
-"PO-Revision-Date: 2024-06-25 15:51+0330\n"
+"POT-Creation-Date: 2024-07-08 22:38+0330\n"
+"PO-Revision-Date: 2024-07-08 22:38+0330\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -42,7 +42,7 @@ msgstr "وضعیت"
 msgid "description"
 msgstr "توضیحات"
 
-#: .\models.py:16 .\templates\projects\project_detail.html:67
+#: .\models.py:16 .\templates\projects\project_detail.html:72
 msgid "ground meterage"
 msgstr "مساحت زمین"
 
@@ -54,61 +54,53 @@ msgstr "آدرس"
 msgid "date construction"
 msgstr "تاریخ ساخت"
 
-#: .\models.py:20 .\templates\projects\project_detail.html:68
+#: .\models.py:20 .\templates\projects\project_detail.html:73
 msgid "floors"
 msgstr "طبقات"
 
-#: .\models.py:21 .\templates\projects\project_detail.html:69
+#: .\models.py:21 .\templates\projects\project_detail.html:74
 msgid "floors underground"
 msgstr "طبقات منفی"
 
-#: .\models.py:22 .\templates\projects\project_detail.html:70
+#: .\models.py:22 .\templates\projects\project_detail.html:75
 msgid "units"
 msgstr "واحد ها"
 
-#: .\models.py:23 .\templates\projects\project_detail.html:71
+#: .\models.py:23 .\templates\projects\project_detail.html:76
 msgid "units in each floor"
 msgstr "تعداد واحد در هر طبقه"
 
 #: .\models.py:24
-msgid "meterage"
-msgstr "متراژ"
-
-#: .\models.py:25 .\templates\projects\project_detail.html:72
-msgid "Rooms"
-msgstr "تعداد اتاق"
-
-#: .\models.py:26
 msgid "image"
 msgstr "عکس"
 
-#: .\templates\projects\project_detail.html:5
-#: .\templates\projects\project_detail.html:23
-#: .\templates\projects\project_detail.html:48
+#: .\templates\projects\project_detail.html:6
+#: .\templates\projects\project_detail.html:30
+#: .\templates\projects\project_detail.html:53
 msgid "Project"
 msgstr "پروژه"
 
-#: .\templates\projects\project_detail.html:52
+#: .\templates\projects\project_detail.html:57
 msgid "Project Goals"
 msgstr "اهداف پروژه"
 
-#: .\templates\projects\project_detail.html:53
+#: .\templates\projects\project_detail.html:58
 msgid ""
 "Creating a safe, comfortable and modern environment for individuals and "
 "families, we strive to meet the diverse needs of our customers by focusing "
-"on the quality of construction, the use of high-quality materials and modern "
-"technologies."
+"on the quality of construction, the use of high-quality materials and modern"
+" technologies."
 msgstr ""
 "ایجاد محیط‌ امن، راحت و مدرن برای افراد و خانواده‌ها ه ما با تمرکز بر کیفیت "
 "ساخت، استفاده از مصالح مرغوب و تکنولوژی‌های نوین، تلاش می‌کنیم تا نیازهای "
 "متنوع مشتریان خود را برآورده کنیم. علاوه بر این، به دنبال ارتقاء سطح زندگی "
 "جامعه و کمک به توسعه پایدار شهری هستیم."
 
-#: .\templates\projects\project_detail.html:56
+#: .\templates\projects\project_detail.html:61
 msgid "Our Approach"
 msgstr "رویکرد ما"
 
-#: .\templates\projects\project_detail.html:57
+#: .\templates\projects\project_detail.html:62
 msgid ""
 "Using expert and experienced teams, we carry out the construction processes "
 "with precision and detailed planning to get the best results. Applying "
@@ -116,46 +108,57 @@ msgid ""
 "commitment to sustainability and foresight. Also, we believe in the "
 "importance of continuous and transparent communication with customers and "
 "partners and we try to gain their trust and satisfaction by creating "
-"positive and constructive interactions. This comprehensive approach helps us "
-"to provide projects with superior quality and in accordance with the current "
-"needs of the society."
+"positive and constructive interactions. This comprehensive approach helps us"
+" to provide projects with superior quality and in accordance with the "
+"current needs of the society."
 msgstr ""
 "ایجاد محیط‌ امن، راحت و مدرن برای افراد و خانواده‌ها  ما با تمرکز بر کیفیت "
 "ساخت، استفاده از مصالح مرغوب و تکنولوژی‌های نوین، تلاش می‌کنیم تا نیازهای "
 "متنوع مشتریان خود را برآورده کنیم."
 
-#: .\templates\projects\project_detail.html:66
+#: .\templates\projects\project_detail.html:71
 msgid "Building's info"
 msgstr "اطلاعات ملک"
 
-#: .\templates\projects\project_detail.html:75
+#: .\templates\projects\project_detail.html:77
+msgid "Rooms"
+msgstr "تعداد اتاق"
+
+#: .\templates\projects\project_detail.html:80
 msgid "Date"
 msgstr "تاریخ"
 
-#: .\templates\projects\project_detail.html:79
+#: .\templates\projects\project_detail.html:84
 msgid "Location"
 msgstr "موقعیت"
 
-#: .\templates\projects\project_detail.html:94
+#: .\templates\projects\project_detail.html:99
 msgid "Photos gallery"
 msgstr "گالری تصاویر"
 
-#: .\templates\projects\project_list.html:5
-#: .\templates\projects\project_list.html:13
+#: .\templates\projects\project_list.html:7
+#: .\templates\projects\project_list.html:15
 msgid "Projects"
 msgstr "پروژه ها"
 
-#: .\templates\projects\project_list.html:25
+#: .\templates\projects\project_list.html:27
 msgid "Built projects"
 msgstr "پروژه های ساخته شده"
 
-#: .\templates\projects\project_list.html:27
+#: .\templates\projects\project_list.html:29
 msgid "Construction projects"
 msgstr "پروژه های در حال ساخت"
 
-#: .\templates\projects\project_list.html:28
+#: .\templates\projects\project_list.html:30
 msgid "All"
 msgstr "همه"
+
+#: .\templates\projects\project_list.html:37
+msgid "Search ..."
+msgstr "جستجو ..."
+
+#~ msgid "meterage"
+#~ msgstr "متراژ"
 
 #~ msgid "More"
 #~ msgstr "بیشتر"

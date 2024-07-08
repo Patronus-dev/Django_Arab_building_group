@@ -21,8 +21,6 @@ class Project(models.Model):
     minus_floor = models.IntegerField(default=0, blank=True, null=True, verbose_name=_('floors underground'))  # Number of floors underground
     units = models.IntegerField(default=0, blank=True, null=True, verbose_name=_('units'))  # Number of all units
     units_in_floor = models.IntegerField(default=0, blank=True, null=True, verbose_name=_('units in each floor'))  # Number of units in each floor
-    unit_meterage = models.FloatField(default=0, blank=True, null=True, verbose_name=_('meterage'))  # meterage of each unit
-    room = models.IntegerField(default=0, blank=True, null=True, verbose_name=_('Rooms'))  # Number of rooms
     image_cover = models.ImageField(upload_to='project/project_cover/', blank=True, null=True, verbose_name=_('image'))
 
     def __str__(self):
