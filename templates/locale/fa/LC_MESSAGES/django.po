@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-08 20:37+0330\n"
-"PO-Revision-Date: 2024-07-08 20:38+0330\n"
+"POT-Creation-Date: 2024-07-13 02:23+0330\n"
+"PO-Revision-Date: 2024-07-13 02:23+0330\n"
 "Last-Translator:   <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,59 +22,63 @@ msgstr ""
 msgid "Amer Engineering Group"
 msgstr "گروه مهندسی عامر"
 
-#: .\_base.html:38
+#: .\_base.html:39
 msgid "Loading..."
 msgstr ""
 
-#: .\_base.html:83
+#: .\_base.html:87
 msgid "About Us"
 msgstr "درباره ما"
 
-#: .\_base.html:88 .\_base.html:214
+#: .\_base.html:92 .\_base.html:208
 msgid "Blog"
 msgstr "بلاگ"
 
-#: .\_base.html:93
+#: .\_base.html:97
 msgid "Material"
 msgstr "متریال"
 
-#: .\_base.html:99
+#: .\_base.html:103
 msgid "Projects"
 msgstr "پروژه ها"
 
-#: .\_base.html:108 .\home.html:9
+#: .\_base.html:108 .\home.html:8
 msgid "Home"
 msgstr "صفحه اصلی"
 
-#: .\_base.html:195
+#: .\_base.html:184
 msgid "contact us"
 msgstr "ارتباط با ما"
 
-#: .\_base.html:196
+#: .\_base.html:185
 msgid "Call"
 msgstr "تماس"
 
-#: .\_base.html:198
+#: .\_base.html:187
+msgid "Fax"
+msgstr "فکس"
+
+#: .\_base.html:191
 msgid "E-mail"
 msgstr "ایمیل"
 
-#: .\_base.html:204
+#: .\_base.html:197
 msgid "shortcut"
 msgstr "میانبر ها"
 
-#: .\_base.html:208
+#: .\_base.html:202
 msgid "projects"
 msgstr "پروژه ها"
 
-#: .\_base.html:211
+#: .\_base.html:205
 msgid "about us"
 msgstr "درباره ما"
 
-#: .\home.html:63
+#: .\home.html:56
 msgid "Impressive view"
 msgstr "نمای چشمگیر"
 
-#: .\home.html:89
+#: .\home.html:82
 msgid ""
 "The combination of art and modern architecture, a face that simultaneously "
 "provides the beauty of design and the value of performance."
@@ -82,57 +86,58 @@ msgstr ""
 "تلفیق هنر و معماری مدرن، چهره ای که به‌ طور همزمان زیبایی طراحی و ارزش "
 "عملکرد را فراهم می‌آورد."
 
-#: .\home.html:135
+#: .\home.html:125
 msgid "New structures"
 msgstr "سازه های نوین"
 
-#: .\home.html:161
+#: .\home.html:151
 msgid ""
 "Creating beautiful and impressive buildings as well as influencing the urban"
 " living environment"
 msgstr "خلق بنا های زیبا و چشمگیر و همچنین تاثیر گذار بر محیط زندگی شهری"
 
-#: .\home.html:207
+#: .\home.html:194
 msgid "High quality materials"
 msgstr "کیفیت مطلوب"
 
-#: .\home.html:234
-msgid ""
-"Using high-quality materials and experienced and efficient forces,we offer "
-"high quality and trust to our customers,"
-msgstr ""
-"استفاده از مصالح مرغوب و نیروهای مجرب و کارآمد،\n"
-" اعتماد و کیفیت بالایی را به مشتریانمان ارائه می‌دهیم"
+#: .\home.html:221
+msgid "Using high-quality materials and experienced and efficient forces,"
+msgstr "استفاده از مصالح مرغوب و نیروهای مجرب و کارآمد،"
 
-#: .\home.html:236
+#: .\home.html:223
+msgid "we offer high quality and trust to our customers,"
+msgstr "اعتماد و کیفیت بالایی را به مشتریانمان ارائه می‌دهیم"
+
+#: .\home.html:225
 msgid "in order to build buildings with unparalleled strength and beauty."
 msgstr "تا ساختمان‌هایی با استحکام و زیبایی بی‌نظیر احداث کنیم."
 
-#: .\home.html:282
+#: .\home.html:268
 msgid "Modern design"
 msgstr "طراحی مدرن"
 
-#: .\home.html:310
-msgid ""
-"With modern design and use of open spaces and natural light, we create a "
-"beautiful, efficient and peaceful environment for residents."
-msgstr ""
-"ما با طراحی مدرن و استفاده از فضاهای باز و نور طبیعی محیطی زیبا، کارآمد و "
-"آرام برای ساکنان ایجاد می کنیم."
+#: .\home.html:295
+msgid "With modern design and use of open spaces and natural light,"
+msgstr "ما با طراحی مدرن و استفاده از فضاهای باز و نور طبیعی "
 
-#: .\home.html:313
+#: .\home.html:297
 msgid ""
-"The use of new ideas and quality materials brings a unique balance between "
-"beauty and performance."
-msgstr ""
-"استفاده از ایده های نو و متریال با کیفیت، توازنی بی‌نظیر بین زیبایی و عملکرد"
-" به ارمغان می‌آورد."
+"we create a beautiful, efficient and peaceful environment for residents."
+msgstr "محیطی زیبا، کارآمد و آرام برای ساکنان ایجاد می کنیم."
 
-#: .\home.html:328
+#: .\home.html:299
+msgid "The use of new ideas and quality materials"
+msgstr "استفاده از ایده های نو و متریال با کیفیت،"
+
+#: .\home.html:302
+msgid "brings a unique balance between beauty and performance."
+msgstr "توازنی بی‌نظیر بین زیبایی و عملکرد به ارمغان می‌آورد."
+
+#: .\home.html:317
 msgid "Wellcome"
 msgstr "خوش آمدید"
 
-#: .\home.html:329
+#: .\home.html:318
 msgid ""
 "Ali Arab Construction Group has been operating since 1373 with the aim of "
 "building safe buildings, putting quality at the forefront, and using expert "
@@ -150,56 +155,102 @@ msgstr ""
 "شاخص در سطح تهران گردیده و در دسته سازندگان موفق و معتبر شهر تهران قرار "
 "گرفته و همچنین بعنوان سازنده برتر منطقه 3 تهران انتخاب شده اند."
 
-#: .\home.html:333
+#: .\home.html:322
 msgid "About us"
 msgstr "درباره ما"
 
-#: .\home.html:363
+#: .\home.html:354
 msgid "Interior design"
 msgstr "طراحی داخلی"
 
-#: .\home.html:367 .\home.html:391 .\home.html:416
-msgid "Modern Design"
-msgstr "طراحی مدرن"
+#: .\home.html:358
+msgid "Safe space"
+msgstr "محیطی امن و راحت"
 
-#: .\home.html:371 .\home.html:395 .\home.html:420
+#: .\home.html:362
 msgid "Unique Foundation"
 msgstr "منحصر به فرد"
 
-#: .\home.html:375 .\home.html:399 .\home.html:424
-msgid "Smart Heading System"
-msgstr "سیستم هدینگ هوشمند"
+#: .\home.html:366
+msgid "Light balance"
+msgstr "تعادل نور محیط"
 
-#: .\home.html:387
+#: .\home.html:378
 msgid "Exterior design"
 msgstr "طراحی بیرونی"
 
-#: .\home.html:412
-msgid "Industrial premises"
-msgstr "اماکن صنعتی"
+#: .\home.html:382
+msgid "Modern Design"
+msgstr "مدرن"
 
-#: .\home.html:497
+#: .\home.html:386
+msgid "Interaction with the environment"
+msgstr "تعامل با محیط"
+
+#: .\home.html:390
+msgid "Innovative"
+msgstr "نوآورانه"
+
+#: .\home.html:403
+msgid "Drawing"
+msgstr "نقشه کشی"
+
+#: .\home.html:407
+msgid "Optimal"
+msgstr "بهینه"
+
+#: .\home.html:411
+msgid "Efficient"
+msgstr "کارآمد"
+
+#: .\home.html:415
+msgid "Access"
+msgstr "دقت بر دسترسی مناسب"
+
+#: .\home.html:488
 msgid "Discover Recent Works"
 msgstr "پروژه های اخیر"
 
-#: .\home.html:513 .\home.html:542 .\home.html:570
-#, fuzzy
-#| msgid "Projects"
+#: .\home.html:510 .\home.html:544 .\home.html:578
 msgid "Project"
-msgstr "پروژه ها"
+msgstr "پروژه"
 
-#: .\home.html:524 .\home.html:552 .\home.html:580
+#: .\home.html:520 .\home.html:554 .\home.html:588
 msgid "More"
 msgstr "بیشتر"
 
+#: .\home.html:609
+msgid "Recent articles"
+msgstr "مقالات اخیر"
+
+#: .\home.html:610
+msgid "Visit the latest blog content."
+msgstr "از آخرین محتویات بلاگ بازدید فرمایید."
+
+#: .\home.html:613
+#| msgid "More"
+msgid "See More"
+msgstr "مشاهده بیشتر"
+
+#: .\home.html:633
+msgid "Date of Release"
+msgstr "تاریخ انتشار"
+
+#~ msgid "Smart Heading System"
+#~ msgstr "سیستم هدینگ هوشمند"
+
+#~ msgid "Industrial premises"
+#~ msgstr "اماکن صنعتی"
+
+#~ msgid ""
+#~ "Using high-quality materials and experienced and efficient forces,we offer "
+#~ "high quality and trust to our customers,"
+#~ msgstr ""
+#~ "استفاده از مصالح مرغوب و نیروهای مجرب و کارآمد،\n"
+#~ " اعتماد و کیفیت بالایی را به مشتریانمان ارائه می‌دهیم"
+
 #~ msgid "Arab building group"
 #~ msgstr "گروه ساختمانی عرب"
-
-#~ msgid "Using high-quality materials and experienced and efficient forces,"
-#~ msgstr "استفاده از مصالح مرغوب و نیروهای مجرب و کارآمد،"
-
-#~ msgid "we offer high quality and trust to our customers,"
-#~ msgstr "اعتماد و کیفیت بالایی را به مشتریانمان ارائه می‌دهیم"
 
 #~ msgid "Elevator"
 #~ msgstr "آسانسور"

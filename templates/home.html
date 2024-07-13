@@ -1,6 +1,5 @@
 {% extends '_base.html' %}
-{% load blog_tags %}
-{% get_blog_detail_context blog_id %}
+{% load jalali_tags %}
 {% load static %}
 {% load i18n %}
 {% load persian_translation_tags %}
@@ -33,11 +32,8 @@
                     </div>
 
                     <!-- HERO TITLE -->
-                    <div class="tp-caption hero-text" style="text-align: right !important;
-                         width: 100%;
-                         direction: rtl;
-                         float: right;"
-                         data-x="400"
+                    <div class="tp-caption hero-text"
+                         data-x="200"
                          data-y="center"
                          data-voffset="[-140,-120,-100,-180]"
                          data-fontsize="[72,62,52,46]"
@@ -62,8 +58,8 @@
 
                     <!-- HERO SUBTITLE -->
                     <div class="tp-caption small-text"
-                         style="text-align: justify; width: 100%; direction: rtl; float: right;"
-                         data-x="150"
+                         style="direction: rtl;"
+                         data-x="20"
                          data-y="center"
                          data-voffset="[-40,-30,-20,0]"
                          data-fontsize="[21,21,21,21]"
@@ -106,7 +102,7 @@
 
                     <!-- HERO TITLE -->
                     <div class="tp-caption hero-text"
-                         data-x="400"
+                         data-x="120"
                          data-y="center"
                          data-voffset="[-140,-120,-100,-180]"
                          data-fontsize="[72,62,52,46]"
@@ -131,8 +127,8 @@
 
                     <!-- HERO SUBTITLE -->
                     <div class="tp-caption small-text"
-                         style="text-align: justify; width: 70%; direction: rtl; float: right"
-                         data-x="300"
+                         style="direction: rtl;"
+                         data-x="20"
                          data-y="center"
                          data-voffset="[-40,-30,-20,0]"
                          data-fontsize="[21,21,21,21]"
@@ -175,7 +171,7 @@
 
                     <!-- HERO TITLE -->
                     <div class="tp-caption hero-text"
-                         data-x="400"
+                         data-x="120"
                          data-y="center"
                          data-voffset="[-140,-120,-100,-180]"
                          data-fontsize="[72,62,52,46]"
@@ -200,8 +196,8 @@
 
                     <!-- HERO SUBTITLE -->
                     <div class="tp-caption small-text"
-                         style="text-align: right; direction: rtl;"
-                         data-x="150"
+                         style="direction: rtl;"
+                         data-x="100"
                          data-y="center"
                          data-voffset="[-40,-30,-20,0]"
                          data-fontsize="[21,21,21,21]"
@@ -220,11 +216,13 @@
 									"speed":1000,
 									"frame":"999",
 									"to":"opacity:0;","ease":"Power3.easeOut"
-								}]'
-                    ><p style="text-align: center !important; margin-top: 2%">
-                        {% trans 'Using high-quality materials and experienced and efficient forces,we offer high quality and trust to our customers,' %}
-                    </p>
-                        <p style="text-align: center !important">{% trans 'in order to build buildings with unparalleled strength and beauty.' %}</p>
+								}]'>
+                        <p style="text-align: center !important; margin-top: 12%">
+                            {% trans 'Using high-quality materials and experienced and efficient forces,' %}</p>
+                        <p style="text-align: center !important; margin-top: 2%">
+                            {% trans 'we offer high quality and trust to our customers,' %}</p>
+                        <p style="text-align: center !important">
+                            {% trans 'in order to build buildings with unparalleled strength and beauty.' %}</p>
                     </div>
                 </li>
                 <!-- end slide 3 -->
@@ -247,7 +245,7 @@
 
                     <!-- HERO TITLE -->
                     <div class="tp-caption hero-text"
-                         data-x="400"
+                         data-x="200"
                          data-y="center"
                          data-voffset="[-140,-120,-100,-180]"
                          data-fontsize="[72,62,52,46]"
@@ -292,13 +290,16 @@
 									"speed":1000,
 									"frame":"999",
 									"to":"opacity:0;","ease":"Power3.easeOut"
-								}]'
-                    >
-                        <p style="text-align: justify; direction: rtl; margin-top: 2%">
-                            {% trans 'With modern design and use of open spaces and natural light, we create a beautiful, efficient and peaceful environment for residents.' %}
+								}]'>
+                        <p style="text-align: center; direction: rtl; margin-top: 15%">
+                            {% trans 'With modern design and use of open spaces and natural light,' %}</p>
+                        <p style="text-align: center; direction: rtl">
+                            {% trans 'we create a beautiful, efficient and peaceful environment for residents.' %}</p>
+                        <p style="text-align: center; direction: rtl">
+                            {% trans 'The use of new ideas and quality materials' %}
                         </p>
                         <p style="text-align: center; direction: rtl">
-                            {% trans 'The use of new ideas and quality materials brings a unique balance between beauty and performance.' %}
+                            {% trans 'brings a unique balance between beauty and performance.' %}
                         </p>
                     </div>
                 </li>
@@ -323,15 +324,17 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <video style="width: 500px; height: 400px; margin-right: 5%"
-                           autoplay loop muted playsinline
-                           data-bgrepeat="no-repeat"
-                           data-bgfit="cover"
-                           data-bgparallax="7"
-                           class="rev-slidebg"
-                           data-playbackrate="0.5">
-                        <source src="{% static 'videos/logomotion.mp4' %}" type="video/mp4">
-                    </video>
+                    {#                    <video style="width: 500px; height: 400px; margin-right: 5%"#}
+                    {#                           autoplay loop muted playsinline#}
+                    {#                           data-bgrepeat="no-repeat"#}
+                    {#                           data-bgfit="cover"#}
+                    {#                           data-bgparallax="7"#}
+                    {#                           class="rev-slidebg"#}
+                    {#                           data-playbackrate="0.5">#}
+                    {#                        <source src="{% static 'videos/logomotion.mp4' %}" type="video/mp4">#}
+                    {#                    </video>#}
+
+                    <img src="{% static 'img/home/AMER - Brand Identity 09.jpg' %}" class="img-full-width" alt="">
                 </div>
             </div>
         </div>
@@ -352,7 +355,7 @@
                             <ul class="service-1__features">
                                 <li class="service-1__feature">
                                     <i class="ui-check service-1__feature-icon"></i>
-                                    <span class="service-1__feature-text">{% trans 'Modern Design' %}</span>
+                                    <span class="service-1__feature-text">{% trans 'Safe space' %}</span>
                                 </li>
                                 <li class="service-1__feature">
                                     <i class="ui-check service-1__feature-icon"></i>
@@ -360,7 +363,7 @@
                                 </li>
                                 <li class="service-1__feature">
                                     <i class="ui-check service-1__feature-icon"></i>
-                                    <span class="service-1__feature-text">{% trans 'Smart Heading System' %}</span>
+                                    <span class="service-1__feature-text">{% trans 'Light balance' %}</span>
                                 </li>
                             </ul>
                         </div>
@@ -369,7 +372,7 @@
                 <div class="col-xl-4 col-lg-6">
                     <div class="service-1">
                         <a href="#" class="service-1__url hover-scale" onclick="return false;">
-                            <img src="{% static 'img/about/_mg_8991.jpg' %}" class="service-1__img" alt="">
+                            <img src="{% static 'img/_mg_8991.jpg' %}" class="service-1__img" alt="">
                         </a>
                         <div class="service-1__info">
                             <h3 class="service-1__title">{% trans 'Exterior design' %}</h3>
@@ -380,11 +383,11 @@
                                 </li>
                                 <li class="service-1__feature">
                                     <i class="ui-check service-1__feature-icon"></i>
-                                    <span class="service-1__feature-text">{% trans 'Unique Foundation' %}</span>
+                                    <span class="service-1__feature-text">{% trans 'Interaction with the environment' %}</span>
                                 </li>
                                 <li class="service-1__feature">
                                     <i class="ui-check service-1__feature-icon"></i>
-                                    <span class="service-1__feature-text">{% trans 'Smart Heading System' %}</span>
+                                    <span class="service-1__feature-text">{% trans 'Innovative' %}</span>
                                 </li>
                             </ul>
                         </div>
@@ -394,22 +397,22 @@
                 <div class="col-xl-4 col-lg-6">
                     <div class="service-1">
                         <a href="#" class="service-1__url hover-scale" onclick="return false;">
-                            <img src="{% static 'img/about/Interior design.jpg' %}" class="service-1__img" alt="">
+                            <img src="{% static 'img/AMER - Brand Identity 088.png' %}" class="service-1__img" alt="">
                         </a>
                         <div class="service-1__info">
-                            <h3 class="service-1__title">{% trans 'Industrial premises' %}</h3>
+                            <h3 class="service-1__title">{% trans 'Drawing' %}</h3>
                             <ul class="service-1__features">
                                 <li class="service-1__feature">
                                     <i class="ui-check service-1__feature-icon"></i>
-                                    <span class="service-1__feature-text">{% trans 'Modern Design' %}</span>
+                                    <span class="service-1__feature-text">{% trans 'Optimal' %}</span>
                                 </li>
                                 <li class="service-1__feature">
                                     <i class="ui-check service-1__feature-icon"></i>
-                                    <span class="service-1__feature-text">{% trans 'Unique Foundation' %}</span>
+                                    <span class="service-1__feature-text">{% trans 'Efficient' %}</span>
                                 </li>
                                 <li class="service-1__feature">
                                     <i class="ui-check service-1__feature-icon"></i>
-                                    <span class="service-1__feature-text">{% trans 'Smart Heading System' %}</span>
+                                    <span class="service-1__feature-text">{% trans 'Access' %}</span>
                                 </li>
                             </ul>
                         </div>
@@ -422,7 +425,7 @@
 
     <!-- Testimonials -->
     <section class="section-wrap bg-dark-overlay"
-             style="background-image: url({% static 'img/testimonials/bg.jpg' %})">
+             style="background-image: url({% static 'img/home/AMER - Brand Identity 10.jpg' %})">
         <div class="container">
             <div class="title-row text-center">
                 <h3 class="section-title">Awards and honors</h3>
@@ -482,11 +485,13 @@
 
     <!-- Portfolio -->
     <section class="section-wrap" style="text-align: right">
-        <h3 style="margin-bottom: 5%; margin-right: 15%" class="text-right">{% trans 'Discover Recent Works' %}</h3>
+        <h3 style="margin-right: 15%" class="text-right">{% trans 'Discover Recent Works' %}</h3>
         <div class="container">
             <div class="projects">
                 {% for project in  all_projects %}
+
                     {% if project.id == 8 %}
+                        <!-- start project 1 -->
                         <div class="project-1">
                             <div class="project-1__container">
                                 <div class="project__img-holder hover-scale">
@@ -503,8 +508,7 @@
                                 <div class="project-1__description" style="width: 45%; float: right; text-align: right;
                                                                    direction: rtl ; border-left: solid white 1px; margin: 0 auto;">
                                     <h3 class="project-1__title">{% trans 'Project' %}</h3>
-                                    <h3 style="margin-right: 6%"
-                                        class="project-1__title">{{ project.title|translate_number }}</h3>
+                                    <h3 style="margin-right: 6%" class="project-1__title">{{ project.title }}</h3>
                                 </div>
                                 <p style="font-size: x-large; color: white; font-family: 'Times New Roman',serif;
                                   text-align: center; float: left; margin-top: 10%;">
@@ -518,8 +522,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- end project -->
+                        <!-- end project 1 -->
+
                     {% elif project.id == 10 %}
+                        <!-- start project 2 -->
                         <div class="project-1">
                             <div class="project-1__container">
                                 <div class="project__img-holder hover-scale">
@@ -550,8 +556,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- end project -->
+                        <!-- end project 2 -->
+
                     {% elif project.id == 9 %}
+                        <!-- start project 3 -->
                         <div class="project-1">
                             <div class="project-1__container">
                                 <div class="project__img-holder hover-scale">
@@ -582,13 +590,65 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- end project -->
+                        <!-- end project 3 -->
+
                     {% endif %}
                 {% endfor %}
             </div>
         </div>
     </section>
     <!-- end portfolio -->
+
+    <!-- From Blog -->
+    <section class="section-wrap blog-grid" style="direction: rtl; text-align: right">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="blog-grid__title-col d-flex flex-column mb-lg-48">
+                        <div class="title-row">
+                            <h2 class="section-title">{% trans 'Recent articles' %}</h2>
+                            <p>{% trans 'Visit the latest blog content.' %}</p>
+                        </div>
+                        <a href="{% url 'blog_list' %}" class="btn btn--md btn--dark"
+                           style="width: fit-content">
+                            <span>{% trans 'See More' %}</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="from-blog">
+                        <div class="row row-60">
+                            {% for blog in all_blogs|slice:"-2:" %}
+                                <div class="col-lg-6">
+                                    <article class="entry">
+                                        <div class="entry__img-holder">
+                                            <a href="{% url 'blog_detail' blog.id %}">
+                                                <img src="{{ blog.image.url }}" class="entry__img" alt=""
+                                                     style="height: 20rem">
+                                            </a>
+                                        </div>
+                                        <div class="entry__body">
+                                            <ul class="entry__meta">
+                                                <li class="entry__meta-date">
+                                                    <span>{% trans 'Date of Release' %} : {{ blog.datetime_created|to_jalali:'%Y/%m/%d'|translate_number }}</span>
+                                                </li>
+                                            </ul>
+                                            <h4 class="entry__title">
+                                                <a href="{% url 'blog_detail' blog.id %}">{{ blog.title }}</a>
+                                            </h4>
+                                        </div>
+                                    </article>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end from blog -->
 
 {% endblock content %}
 

@@ -128,10 +128,9 @@
                     <!-- end navbar -->
 
                     <!-- Logo -->
-                    <a href="{% url 'home' %}" style="width: 4%">
-                        <img class="logo" src="{% static 'img/Amer-logo - no bg - nav.png' %}"
-                             srcset="{% static 'img/Amer-logo - no bg - nav.png' %} 8x, {% static 'img/Amer-logo - no bg - nav.png' %} 8x"
-                             alt="logo">
+                    <a href="{% url 'home' %}" style="max-width: 4%; height: auto">
+                        <img class="logo" src="{% static 'img/logo.png' %}"
+                             srcset="{% static 'img/logo.png' %} 1x, img/logo@2x.png 2x" alt="logo">
                     </a>
                     <br>
                     <p style="font-size: medium; color: black; font-family: 'Times New Roman',serif;">
@@ -181,9 +180,11 @@
                     <div class="row" style="margin-right: 10%">
 
                         <!-- Contact us -->
-                        <div style="width: 400px; direction: ltr">
+                        <div style="width: 400px; direction: ltr; float: right">
                             <h6 style="color:#9F815F; margin-bottom: 7%">{% trans 'contact us' %}</h6>
                             {% trans 'Call' %} : <a style="color: white" href="tel:+982122782136">22782136-021</a>
+                            <br>
+                            {% trans 'Fax' %} : <span style="color: white">22792717-021</span>
                             <br>
                             <a style="color: white;"
                                href="mailto:aliarab.building@yahoo.com">aliarab.building@yahoo.com</a>
@@ -191,9 +192,9 @@
                         </div>
                         <!-- end Contact us -->
 
-                        <!-- content 1 -->
-                        <div class="col-lg-2 col-md-3" style="text-align: center;">
-                            <h6 style="color:#9F815F; margin-bottom: 20%">{% trans 'shortcut' %}</h6>
+                        <!-- start shortcuts -->
+                        <div class="col-lg-2 col-md-3" style="text-align: right; width: 400px; direction: rtl;">
+                            <h6 style="color:#9F815F; margin-bottom: 10%; text-align: right;">{% trans 'shortcut' %}</h6>
                             <div class="widget widget_nav_menu">
                                 <ul>
                                     <li>
@@ -209,7 +210,30 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- end content 1 -->
+                        <!-- end shortcuts -->
+
+                        <!-- start social logos -->
+                        <div class="nav__socials d-none d-lg-block">
+                            <div class="socials" style="margin: 2%; text-align: left">
+                                <a href="mailto:aliarab.building@yahoo.com" class="social social-email"
+                                   aria-label="email"
+                                   title="email"
+                                   target="_blank"><i class="ui-email"></i>
+                                </a>
+                                <br>
+                                <a href="https://api.whatsapp.com/send?phone=+989123456789"
+                                   class="social social-twitter"
+                                   aria-label="whatsapp" title="whatsapp"
+                                   target="_blank"><i class="ui-whatsapp"></i>
+                                </a>
+                                <br>
+                                <a href="https://www.instagram.com/arab_building" class="social social-instagram"
+                                   aria-label="instagram" title="instagram"
+                                   target="_blank"><i class="ui-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- end social logos -->
 
                     </div>
                 </div>
