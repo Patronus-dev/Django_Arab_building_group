@@ -1,13 +1,10 @@
 <div align="center">
-  <a href="https://instagram.com/m.hadi.hajihosseini">
+  <a href="https://instagram.com/_mehdisabz_>
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" width="100"/>
   </a>
-  <a href="https://codingyar.com">
+  <!-- <a href="https://codingyar.com">
     <img src="https://img.shields.io/badge/website-blue?style=for-the-badge&logo=About.me&logoColor=white" width="100"/>
-  </a>
-  <a href="https://t.me/hajihosseini_cy">
-    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" width="100"/>
-  </a>
+  </a> -->
 </div>
 
 
