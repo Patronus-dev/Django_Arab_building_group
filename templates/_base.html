@@ -24,10 +24,10 @@
 
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="{% static 'img/Amer-logo - no bg - nav.png' %}">
-    <link rel="apple-touch-icon" href="{% static 'img/Amer-logo - no bg - nav.png' %}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/apple-touch-icon-72x72.png' %}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/apple-touch-icon-114x114.png' %}">
+    <link rel="shortcut icon" href="{% static 'img/logo.png' %}">
+    <link rel="apple-touch-icon" href="{% static 'img/logo.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/logo.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/logo.png' %}">
 
 </head>
 
@@ -76,35 +76,35 @@
                     </div>
 
                     <div class="nav__phone nav--align-right d-none d-lg-block">
-                        {#                        <span class="nav__phone-text">Call us:</span>#}
-                        {#                        <a href="tel:1-800-995-3959" class="nav__phone-number">1-800-995-3959</a>#}
+                        {# <span class="nav__phone-text">Call us:</span>#}
+                        {# <a href="tel:1-800-995-3959" class="nav__phone-number">1-800-995-3959</a>#}
                     </div>
 
                     <!-- start navbar -->
                     <nav id="navbar-collapse" class="nav__wrap collapse navbar-collapse" style="margin-right: 5%">
                         <ul class="nav__menu">
-                            <li class="nav__dropdown">
+                            <li class="nav__dropdown {% if request.resolver_match.url_name == 'about_us' %}active{% endif %}">
                                 <a href="{% url 'about_us' %}" aria-haspopup="true">{% trans 'About Us' %}</a>
                                 <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
                                    aria-expanded="false"></i>
                             </li>
-                            <li class="nav__dropdown">
+                            <li class="nav__dropdown {% if request.resolver_match.url_name == 'blog_list' %}active{% endif %}">
                                 <a href="{% url 'blog_list' %}" aria-haspopup="true">{% trans 'Blog' %}</a>
                                 <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
                                    aria-expanded="false"></i>
                             </li>
-                            <li class="nav__dropdown">
+                            <li class="nav__dropdown {% if request.resolver_match.url_name == 'material' %}active{% endif %}">
                                 <a href="{% url 'material' %}" aria-haspopup="true">{% trans 'Material' %}</a>
                                 <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
                                    aria-expanded="false"></i>
                             </li>
-                            <li class="nav__dropdown">
+                            <li class="nav__dropdown {% if request.resolver_match.url_name == 'project:projects_list' %}active{% endif %}">
                                 <a href="{% url 'project:projects_list' %}"
                                    aria-haspopup="true">{% trans 'Projects' %}</a>
                                 <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
                                    aria-expanded="false"></i>
                             </li>
-                            <li class="nav__dropdown active">
+                            <li class="nav__dropdown {% if request.resolver_match.url_name == 'home' %}active{% endif %}">
                                 <a href="{% url 'home' %}" aria-haspopup="true">{% trans 'Home' %}</a>
                                 <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true"
                                    aria-expanded="false"></i>
